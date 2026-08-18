@@ -22,18 +22,25 @@ HOW TO RUN:
 Press Ctrl+C to stop.
 """
 
+import atexit
 import hashlib
 import json
 import logging
+import os
 import shutil
+import sys
 import time
 from datetime import datetime
 from pathlib import Path
+
+import psutil
 
 import config
 import converter
 import whatsapp_sender
 import alerts
+
+LOCK_FILE = config.BASE_DIR / "app_running.lock"
 
 
 # ---------------------------------------------------------------------------
@@ -56,6 +63,91 @@ def setup_folders() -> None:
         config.ARCHIVE_CSV_DIR,
     ):
         folder.mkdir(parents=True, exist_ok=True)
+
+
+# ---------------------------------------------------------------------------
+# SINGLE-INSTANCE LOCK
+# ---------------------------------------------------------------------------
+# Rerunning START.bat without closing the previous window launches a
+# SECOND app.py that tries to open Chrome against the same
+# chrome_profile/ at the same time. Chrome won't allow that, so the
+# second instance's WhatsApp Web fails — this catches it at startup with
+# a clear message instead.
+
+def acquire_single_instance_lock() -> bool:
+    """Returns False if another app.py is already genuinely running."""
+    if LOCK_FILE.exists():
+        try:
+            old_pid = int(LOCK_FILE.read_text().strip())
+        except (ValueError, OSError):
+            old_pid = None
+
+        if old_pid is not None and psutil.pid_exists(old_pid):
+            try:
+                proc = psutil.Process(old_pid)
+                cmdline = " ".join(proc.cmdline()).lower()
+                if "app.py" in cmdline:
+                    return False  # genuinely still running
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                pass
+        # Stale lock (old process gone, or PID reused) — safe to take over.
+
+    LOCK_FILE.write_text(str(os.getpid()))
+    atexit.register(release_single_instance_lock)
+    return True
+
+
+def release_single_instance_lock() -> None:
+    try:
+        if LOCK_FILE.exists():
+            LOCK_FILE.unlink()
+    except OSError:
+        pass
+
+
+def cleanup_orphaned_chrome() -> None:
+    """Close out any Chrome window still holding chrome_profile/ open from
+    a previous run whose app.py process is no longer alive.
+
+    This happens if the app.py terminal window gets closed (or killed)
+    without a clean Ctrl+C — the Python process dies, but its Chrome
+    child can survive as an orphan and keeps chrome_profile/ locked.
+    Since acquire_single_instance_lock() already confirmed no legitimate
+    app.py owns that Chrome window, it's safe to close it and clear
+    Chrome's own lock files so a fresh session can open the same
+    profile cleanly.
+    """
+    profile_dir = str(whatsapp_sender.CHROME_PROFILE_DIR)
+    killed_any = False
+
+    for proc in psutil.process_iter(["pid", "name", "cmdline"]):
+        try:
+            name = (proc.info["name"] or "").lower()
+            if "chrome" not in name:
+                continue
+            cmdline = " ".join(proc.info["cmdline"] or [])
+            if profile_dir in cmdline:
+                proc.terminate()
+                killed_any = True
+        except (psutil.NoSuchProcess, psutil.AccessDenied):
+            continue
+
+    if killed_any:
+        logging.info(
+            "Closed a leftover Chrome/WhatsApp window from a previous "
+            "run so a fresh session can open cleanly."
+        )
+        time.sleep(2)  # give Chrome a moment to actually release its lock files
+
+    # Chrome's own lock files — these are what actually block a new
+    # Chrome from opening the profile, even after the old process is gone.
+    for lock_name in ("SingletonLock", "SingletonCookie", "SingletonSocket"):
+        lock_path = whatsapp_sender.CHROME_PROFILE_DIR / lock_name
+        try:
+            if lock_path.exists() or lock_path.is_symlink():
+                lock_path.unlink()
+        except OSError:
+            pass
 
 
 # ---------------------------------------------------------------------------
@@ -370,7 +462,23 @@ def watch_and_process() -> None:
 if __name__ == "__main__":
     setup_logging()
     setup_folders()
+
+    if not acquire_single_instance_lock():
+        print(
+            "\napp.py is already running in another window — WhatsApp Web "
+            "is already open there.\n"
+            "You don't need to start a second one; just leave the "
+            "existing window running.\n"
+            "(If you're sure no other instance is actually running, "
+            f"delete {LOCK_FILE.name} and try again.)\n"
+        )
+        sys.exit(1)
+
+    cleanup_orphaned_chrome()
+
     try:
         watch_and_process()
     except KeyboardInterrupt:
         logging.info("Stopped.")
+    finally:
+        release_single_instance_lock()
