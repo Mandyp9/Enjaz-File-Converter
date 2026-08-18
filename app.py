@@ -306,6 +306,18 @@ def watch_and_process() -> None:
         config.INPUT_DIR, config.WATCH_INTERVAL_SECONDS
     )
     logging.info("Tracking %d previously processed file(s).", len(processed_hashes))
+
+    # Open WhatsApp Web once, right away, and keep it open for the whole
+    # run — rather than opening/closing it around each send. If this
+    # fails at startup, send_pending_alerts()/send_pending_files() still
+    # try to open it lazily later, so it's not fatal.
+    logging.info("Opening WhatsApp Web...")
+    if not session.start():
+        logging.warning(
+            "Could not open WhatsApp Web at startup — will keep retrying "
+            "whenever there's something to send."
+        )
+
     logging.info("Press Ctrl+C to stop.\n")
 
     try:
@@ -341,11 +353,9 @@ def watch_and_process() -> None:
             # Send everything waiting in output/ (new + retry failures).
             send_pending_files(session)
 
-            # Close browser when idle.
-            no_pending_files = not list(config.OUTPUT_DIR.glob("*.csv")) and not list(config.OUTPUT_DIR.glob("*.txt"))
-            if no_pending_files and not alerts.has_pending() and session.is_ready():
-                logging.info("Nothing more to send — closing browser.")
-                session.close()
+            # WhatsApp Web is kept open for the whole run (see startup
+            # above) rather than being closed here when idle, so it
+            # doesn't need to be re-logged-in (QR scan) every cycle.
 
             time.sleep(config.WATCH_INTERVAL_SECONDS)
 
