@@ -1,0 +1,123 @@
+{
+  "_readme": [
+    "Each entry describes ONE valid wallet ID number shape.",
+    "  prefix = the digits the number must START with (can be empty \"\" to match any digits)",
+    "  length = the TOTAL number of digits the number must have (prefix included)",
+    "  label  = just a note for yourself, not used by the code",
+    "",
+    "A beneficiary account number is treated as a WALLET ID if it matches",
+    "ANY entry below (right prefix AND right total length). Otherwise it's",
+    "treated as a bank account number.",
+    "",
+    "Example: Nepali mobile 9841234567 -> prefix '9', length 10 -> matches.",
+    "Example: Nepali mobile with country code 9779841234567 -> prefix '977', length 13 -> matches.",
+    "",
+    "Add/edit/remove entries freely — no code changes needed."
+  ],
+  "wallet_number_formats": [
+
+  { "label": "Nepal mobile (local, no country code)", "prefix": "9", "length": 10 },
+  { "label": "Nepal mobile (with 977 country code)", "prefix": "977", "length": 13 },
+
+  { "label": "United Arab Emirates mobile (local)", "prefix": "05", "length": 10 },
+  { "label": "United Arab Emirates mobile (with 971 country code)", "prefix": "9715", "length": 12 },
+
+  { "label": "Qatar mobile (local)", "prefix": "3", "length": 8 },
+  { "label": "Qatar mobile (local)", "prefix": "5", "length": 8 },
+  { "label": "Qatar mobile (local)", "prefix": "6", "length": 8 },
+  { "label": "Qatar mobile (local)", "prefix": "7", "length": 8 },
+  { "label": "Qatar mobile (with 974 country code)", "prefix": "9743", "length": 11 },
+  { "label": "Qatar mobile (with 974 country code)", "prefix": "9745", "length": 11 },
+  { "label": "Qatar mobile (with 974 country code)", "prefix": "9746", "length": 11 },
+  { "label": "Qatar mobile (with 974 country code)", "prefix": "9747", "length": 11 },
+
+  { "label": "Malaysia mobile (local)", "prefix": "01", "length": "10-11" },
+  { "label": "Malaysia mobile (with 60 country code)", "prefix": "601", "length": "11-12" },
+
+  { "label": "Australia mobile (local)", "prefix": "04", "length": 10 },
+  { "label": "Australia mobile (with 61 country code)", "prefix": "614", "length": 11 },
+
+  { "label": "Saudi Arabia mobile (local)", "prefix": "05", "length": 10 },
+  { "label": "Saudi Arabia mobile (with 966 country code)", "prefix": "9665", "length": 12 },
+
+  { "label": "Japan mobile (local)", "prefix": "070", "length": 11 },
+  { "label": "Japan mobile (local)", "prefix": "080", "length": 11 },
+  { "label": "Japan mobile (local)", "prefix": "090", "length": 11 },
+  { "label": "Japan mobile (with 81 country code)", "prefix": "8170", "length": 12 },
+  { "label": "Japan mobile (with 81 country code)", "prefix": "8180", "length": 12 },
+  { "label": "Japan mobile (with 81 country code)", "prefix": "8190", "length": 12 },
+
+  { "label": "Republic of Korea mobile (local)", "prefix": "010", "length": 11 },
+  { "label": "Republic of Korea mobile (with 82 country code)", "prefix": "8210", "length": 12 },
+
+  { "label": "United Kingdom mobile (local)", "prefix": "07", "length": 11 },
+  { "label": "United Kingdom mobile (with 44 country code)", "prefix": "447", "length": 12 },
+
+  { "label": "Kuwait mobile (local)", "prefix": "5", "length": 8 },
+  { "label": "Kuwait mobile (local)", "prefix": "6", "length": 8 },
+  { "label": "Kuwait mobile (local)", "prefix": "9", "length": 8 },
+  { "label": "Kuwait mobile (with 965 country code)", "prefix": "9655", "length": 11 },
+  { "label": "Kuwait mobile (with 965 country code)", "prefix": "9656", "length": 11 },
+  { "label": "Kuwait mobile (with 965 country code)", "prefix": "9659", "length": 11 },
+
+  { "label": "Portugal mobile (local)", "prefix": "9", "length": 9 },
+  { "label": "Portugal mobile (with 351 country code)", "prefix": "3519", "length": 12 },
+
+  { "label": "United States mobile", "prefix": "", "length": 10 },
+  { "label": "United States mobile (with 1 country code)", "prefix": "1", "length": 11 },
+
+  { "label": "Bahrain mobile (local)", "prefix": "3", "length": 8 },
+  { "label": "Bahrain mobile (with 973 country code)", "prefix": "9733", "length": 11 },
+
+  { "label": "Hong Kong mobile", "prefix": "5", "length": 8 },
+  { "label": "Hong Kong mobile", "prefix": "6", "length": 8 },
+  { "label": "Hong Kong mobile", "prefix": "9", "length": 8 },
+  { "label": "Hong Kong mobile (with 852 country code)", "prefix": "8525", "length": 11 },
+  { "label": "Hong Kong mobile (with 852 country code)", "prefix": "8526", "length": 11 },
+  { "label": "Hong Kong mobile (with 852 country code)", "prefix": "8529", "length": 11 },
+
+  { "label": "Germany mobile (local)", "prefix": "015", "length": "11-13" },
+  { "label": "Germany mobile (local)", "prefix": "016", "length": "11-13" },
+  { "label": "Germany mobile (local)", "prefix": "017", "length": "11-13" },
+  { "label": "Germany mobile (with 49 country code)", "prefix": "4915", "length": "12-14" },
+  { "label": "Germany mobile (with 49 country code)", "prefix": "4916", "length": "12-14" },
+  { "label": "Germany mobile (with 49 country code)", "prefix": "4917", "length": "12-14" },
+
+  { "label": "Romania mobile (local)", "prefix": "07", "length": 10 },
+  { "label": "Romania mobile (with 40 country code)", "prefix": "407", "length": 11 },
+
+  { "label": "Poland mobile (local)", "prefix": "5", "length": 9 },
+  { "label": "Poland mobile (local)", "prefix": "6", "length": 9 },
+  { "label": "Poland mobile (local)", "prefix": "7", "length": 9 },
+  { "label": "Poland mobile (with 48 country code)", "prefix": "485", "length": 11 },
+  { "label": "Poland mobile (with 48 country code)", "prefix": "486", "length": 11 },
+  { "label": "Poland mobile (with 48 country code)", "prefix": "487", "length": 11 },
+
+  { "label": "Cyprus mobile (local)", "prefix": "9", "length": 8 },
+  { "label": "Cyprus mobile (with 357 country code)", "prefix": "3579", "length": 11 },
+
+  { "label": "Maldives mobile (local)", "prefix": "7", "length": 7 },
+  { "label": "Maldives mobile (local)", "prefix": "9", "length": 7 },
+  { "label": "Maldives mobile (with 960 country code)", "prefix": "9607", "length": 10 },
+  { "label": "Maldives mobile (with 960 country code)", "prefix": "9609", "length": 10 },
+
+  { "label": "Croatia mobile (local)", "prefix": "09", "length": 10 },
+  { "label": "Croatia mobile (with 385 country code)", "prefix": "3859", "length": 12 },
+
+  { "label": "Denmark mobile", "prefix": "", "length": 8 },
+  { "label": "Denmark mobile (with 45 country code)", "prefix": "45", "length": 10 },
+
+  { "label": "New Zealand mobile (local)", "prefix": "02", "length": "9-10" },
+  { "label": "New Zealand mobile (with 64 country code)", "prefix": "642", "length": "11-12" },
+
+  { "label": "Oman mobile (local)", "prefix": "7", "length": 8 },
+  { "label": "Oman mobile (local)", "prefix": "9", "length": 8 },
+  { "label": "Oman mobile (with 968 country code)", "prefix": "9687", "length": 11 },
+  { "label": "Oman mobile (with 968 country code)", "prefix": "9689", "length": 11 },
+
+  { "label": "Singapore mobile (local)", "prefix": "8", "length": 8 },
+  { "label": "Singapore mobile (local)", "prefix": "9", "length": 8 },
+  { "label": "Singapore mobile (with 65 country code)", "prefix": "658", "length": 10 },
+  { "label": "Singapore mobile (with 65 country code)", "prefix": "659", "length": 10 }
+]
+}

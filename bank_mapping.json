@@ -1,0 +1,250 @@
+{
+  "AGRICULTURAL DEVELOPMENT BANK LIMITED": {
+    "code": "1",
+    "aliases": ["AGRI", "AGRICULTURAL DEVELOPMENT BANK", "ADBL", "AGRICULTURAL"]
+  },
+  "BANK OF KATHMANDU LTD": {
+    "code": "2",
+    "aliases": ["BANK OF KATHMANDU", "BOK", "BOKL"]
+  },
+  "BEST FINANCE COMPANY LTD": {
+    "code": "3",
+    "aliases": ["BEST", "BEST FINANCE"]
+  },
+  "CENTRAL FINANCE LTD": {
+    "code": "4",
+    "aliases": ["CENTR", "CENTRAL FINANCE"]
+  },
+  "CENTURY COMMERCIAL BANK LTD": {
+    "code": "5",
+    "aliases": ["CENTU", "CENTURY BANK", "CENTURY COMMERCIAL BANK"]
+  },
+  "CITIZENS BANK INTERNATIONAL LTD": {
+    "code": "6",
+    "aliases": ["CITI", "CITIZENS BANK", "CITIZENS", "CITIZEN"]
+  },
+  "CIVIL BANK LTD": {
+    "code": "8",
+    "aliases": ["CIVI", "CIVIL BANK"]
+  },
+  "EVEREST BANK LTD": {
+    "code": "11",
+    "aliases": ["EVER", "EVEREST BANK", "EBL"]
+  },
+  "EXCEL DEVELOPMENT BANK LTD": {
+    "code": "13",
+    "aliases": ["EXCE", "EXCEL DEVELOPMENT BANK"]
+  },
+  "GARIMA BIKAS BANK LTD": {
+    "code": "16",
+    "aliases": ["GARI", "GARIMA BIKAS BANK", "GARIMA BANK"]
+  },
+  "GLOBAL IME BANK LTD": {
+    "code": "17",
+    "aliases": ["GLOB", "GLOBAL IME", "GLOBAL IME BANK", "GIBL"]
+  },
+  "GOODWILL FINANCE LIMITED": {
+    "code": "19",
+    "aliases": ["GOOD", "GOODWILL FINANCE"]
+  },
+  "GREEN DEVELOPMENT BANK LTD": {
+    "code": "20",
+    "aliases": ["GREE", "GREEN DEVELOPMENT BANK"]
+  },
+  "GUHESHWORI MERCHANT BANKING AND FINANCE LTD": {
+    "code": "21",
+    "aliases": ["GUHE", "GUHESHWORI FINANCE"]
+  },
+  "GURKHAS FINANCE LTD": {
+    "code": "22",
+    "aliases": ["GURK", "GURKHAS FINANCE"]
+  },
+  "HIMALAYAN BANK LTD": {
+    "code": "23",
+    "aliases": ["HIMA", "HIMALAYAN BANK", "HBL"]
+  },
+  "ICFC FINANCE LTD": {
+    "code": "24",
+    "aliases": ["ICFC", "ICFC FINANCE"]
+  },
+  "JANAKI FINANCE CO LTD": {
+    "code": "25",
+    "aliases": ["JANA", "JANAKI FINANCE"]
+  },
+  "JYOTI BIKASH BANK": {
+    "code": "26",
+    "aliases": ["JYOTI", "JYOTI BIKASH", "JYOTI BIKASH BANK"]
+  },
+  "KAMANA SEWA BIKAS BANK LTD": {
+    "code": "29",
+    "aliases": ["KAMA", "KAMANA SEWA", "KAMANA SEWA BIKAS BANK"]
+  },
+  "KARNALI DEVELOPMENT BANK LTD": {
+    "code": "32",
+    "aliases": ["KARN", "KARNALI DEVELOPMENT BANK"]
+  },
+  "KUMARI BANK LIMITED": {
+    "code": "34",
+    "aliases": ["KUMA", "KUMARI BANK"]
+  },
+  "LAXMI BANK LTD": {
+    "code": "36",
+    "aliases": ["LAXM", "LAXMI BANK"]
+  },
+  "LUMBINI BIKAS BANK LTD": {
+    "code": "37",
+    "aliases": ["LUMB", "LUMBINI BIKAS BANK"]
+  },
+  "MACHHAPUCHCHHRE BANK LTD": {
+    "code": "38",
+    "aliases": ["MACH", "MACHHAPUCHCHHRE BANK", "MBL"]
+  },
+  "MAHALAXMI BIKASH BANK": {
+    "code": "40",
+    "aliases": ["MAHA", "MAHALAXMI BIKASH BANK", "MAHALAXMI BANK"]
+  },
+  "MANJUSHREE FINANCE LIMITED": {
+    "code": "42",
+    "aliases": ["MANJ", "MANJUSHREE FINANCE"]
+  },
+  "MEGA BANK NEPAL LTD": {
+    "code": "44",
+    "aliases": ["MEGA", "MEGA BANK"]
+  },
+  "MITERI DEVELOPMENT BANK LTD": {
+    "code": "46",
+    "aliases": ["MITE", "MITERI DEVELOPMENT BANK"]
+  },
+  "MUKTINATH BIKASH BANK": {
+    "code": "48",
+    "aliases": ["MUKT", "MUKTINATH BANK", "MUKTINATH BIKASH BANK"]
+  },
+  "NABIL BANK LTD": {
+    "code": "50",
+    "aliases": ["NABI", "NABIL", "NABIL BANK"]
+  },
+  "NCC BANK LIMITED": {
+    "code": "51",
+    "aliases": ["NCC ", "NCC BANK"]
+  },
+  "NEPAL BANGLADESH BANK LTD": {
+    "code": "52",
+    "aliases": ["NEPAL BANGLADESH BANK", "NBB"]
+  },
+  "NEPAL BANK LTD": {
+    "code": "53",
+    "aliases": ["NEPAL BANK", "NBL"]
+  },
+  "NEPAL FINANCE LTD": {
+    "code": "55",
+    "aliases": ["NEPAL FINANCE"]
+  },
+  "NEPAL INVESTMENT MEGA BANK LTD": {
+    "code": "56",
+    "aliases": ["NIMB", "NEPAL INVESTMENT MEGA BANK"]
+  },
+  "NEPAL SBI BANK LTD": {
+    "code": "57",
+    "aliases": ["NEPAL SBI BANK", "SBI"]
+  },
+  "NIC ASIA BANK LTD": {
+    "code": "58",
+    "aliases": ["NIC ", "NIC ASIA", "NICASIA", "NIC ASIA BANK"]
+  },
+  "NMB BANK LTD": {
+    "code": "59",
+    "aliases": ["NMB ", "NMB BANK", "NMB"]
+  },
+  "POKHARA FINANCE LTD": {
+    "code": "60",
+    "aliases": ["POKH", "POKHARA FINANCE"]
+  },
+  "PRABHU BANK LTD": {
+    "code": "61",
+    "aliases": ["PRAB", "PRABHU BANK", "PRABHU"]
+  },
+  "PRIME COMMERCIAL BANK LTD": {
+    "code": "62",
+    "aliases": ["PRIM", "PRIME BANK", "PRIME COMMERCIAL BANK"]
+  },
+  "PROGRESSIVE FINANCE CO LTD": {
+    "code": "63",
+    "aliases": ["PROG", "PROGRESSIVE FINANCE"]
+  },
+  "RASTRIYA BANIJYA BANK LTD": {
+    "code": "66",
+    "aliases": ["RAST", "RBB", "RASTRIYA BANIJYA BANK"]
+  },
+  "RELIANCE FINANCE LTD": {
+    "code": "67",
+    "aliases": ["RELI", "RELIANCE FINANCE"]
+  },
+  "SALAPA BIKAS BANK LTD": {
+    "code": "72",
+    "aliases": ["SALA", "SALAPA BIKAS BANK"]
+  },
+  "SANIMA BANK LTD": {
+    "code": "73",
+    "aliases": ["SANI", "SANIMA", "SANIMA BANK"]
+  },
+  "SAPTAKOSHI DEVELOPMENT BANK LTD": {
+    "code": "74",
+    "aliases": ["SAPT", "SAPTAKOSHI DEVELOPMENT BANK"]
+  },
+  "SHANGRILA DEVELOPMENT BANK LTD": {
+    "code": "76",
+    "aliases": ["SHAN", "SHANGRILA BANK", "SHANGRILA DEVELOPMENT BANK"]
+  },
+  "SHINE RESUNGA DEVELOPMENT BANK LTD": {
+    "code": "77",
+    "aliases": ["SHIN", "SHINE RESUNGA", "SHINE RESUNGA BANK"]
+  },
+  "SHREE INVESTMENT FINANCE CO LTD": {
+    "code": "78",
+    "aliases": ["SHRE", "SHREE INVESTMENT FINANCE"]
+  },
+  "SIDDHARTHA BANK LTD": {
+    "code": "79",
+    "aliases": ["SIDD", "SIDDHARTHA", "SIDDHARTHA BANK", "SIDDHARTHA BANK LIMITED"]
+  },
+  "SINDHU BIKASH BANK LTD": {
+    "code": "80",
+    "aliases": ["SIND", "SINDHU BIKASH BANK"]
+  },
+  "SRIJANA FINANCE LTD": {
+    "code": "81",
+    "aliases": ["SRIJ", "SRIJANA FINANCE"]
+  },
+  "STANDARD CHARTERED BANK LTD": {
+    "code": "82",
+    "aliases": ["STAN", "STANDARD CHARTERED", "SCB"]
+  },
+  "LAXMI SUNRISE BANK LTD": {
+    "code": "84",
+    "aliases": ["LAXM", "LAXMI SUNRISE", "SUNRISE BANK", "LAXMI SUNRISE BANK"]
+  },
+  "UNITED FINANCE LTD": {
+    "code": "87",
+    "aliases": ["UNIT", "UNITED FINANCE"]
+  },
+  "SAMRIDDHI FINANCE LTD": {
+    "code": "88",
+    "aliases": ["SAMR", "SAMRIDDHI FINANCE"]
+  },
+  "MULTIPURPOSE FINANCE COMPANY LIMITED": {
+    "code": "93",
+    "aliases": ["MULT", "MULTIPURPOSE FINANCE"]
+  },
+  "NARAYANI DEVELOPMENT BANK LTD": {
+    "code": "94",
+    "aliases": ["NARA", "NARAYANI DEVELOPMENT BANK"]
+  },
+  "CORPORATE DEVELOPMENT BANK": {
+    "code": "95",
+    "aliases": ["CORP", "CORPORATE DEVELOPMENT BANK"]
+  },
+  "SSF BANK": {
+    "code": "125",
+    "aliases": ["SSF", "SSF BANK"]
+  }
+}
