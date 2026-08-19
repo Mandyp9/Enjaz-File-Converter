@@ -5,7 +5,7 @@ A standalone helper to figure out why whatsapp_sender.py can't find the
 search box, your group, or the attach/send buttons.
 
 WHAT IT DOES:
-    1. Opens WhatsApp Web in Chrome (using the same saved login as app.py).
+    1. Opens WhatsApp Web in Edge (using the same saved login as app.py).
     2. Waits for it to load.
     3. Searches for and opens your configured group.
     4. If a .csv file exists in the output/ folder, tries to attach and
@@ -35,10 +35,10 @@ def main():
         print("selenium is not installed. Run: pip install selenium")
         return
 
-    print("Opening Chrome + WhatsApp Web...")
+    print("Opening Edge + WhatsApp Web...")
     driver = ws._create_browser()
     if driver is None:
-        print("Could not start Chrome.")
+        print("Could not start Edge.")
         return
 
     try:

@@ -2,18 +2,18 @@
 WHATSAPP_SENDER.PY
 ==================
 Sends a CSV file to a WhatsApp group as a document attachment using
-WhatsApp Web automated through Selenium + Chrome.
+WhatsApp Web automated through Selenium + Microsoft Edge.
 
 HOW THIS WORKS:
-    - A Chrome window opens showing WhatsApp Web.
+    - An Edge window opens showing WhatsApp Web.
     - The FIRST time, scan the QR code with your phone
       (WhatsApp > Settings > Linked Devices > Link a Device).
-    - After that the login is saved in chrome_profile/ and you won't
+    - After that the login is saved in edge_profile/ and you won't
       need to scan again.
 
 SETUP:
     pip install selenium pyautogui
-    Google Chrome must be installed.
+    Microsoft Edge must be installed (comes preinstalled on Windows).
 """
 
 import logging
@@ -34,8 +34,8 @@ try:
 except ImportError:
     _SELENIUM_AVAILABLE = False
 
-# Saved Chrome login profile so you only scan the QR code once.
-CHROME_PROFILE_DIR = config.BASE_DIR / "chrome_profile"
+# Saved Edge login profile so you only scan the QR code once.
+EDGE_PROFILE_DIR = config.BASE_DIR / "edge_profile"
 
 # Max seconds to wait for any single element to appear.
 ELEMENT_WAIT_SECONDS = 30
@@ -74,18 +74,18 @@ OUTGOING_BUBBLE_XPATH = (
 # ---------------------------------------------------------------------------
 
 def _create_browser():
-    """Open Chrome. Returns a webdriver instance, or None on failure."""
-    # Remove stale SingletonLock so Chrome can start even after a crash.
-    singleton_lock = CHROME_PROFILE_DIR / "SingletonLock"
+    """Open Microsoft Edge. Returns a webdriver instance, or None on failure."""
+    # Remove stale SingletonLock so Edge can start even after a crash.
+    singleton_lock = EDGE_PROFILE_DIR / "SingletonLock"
     if singleton_lock.exists():
         try:
             singleton_lock.unlink()
-            logger.info("Removed stale Chrome SingletonLock.")
+            logger.info("Removed stale Edge SingletonLock.")
         except OSError:
             pass
 
-    options = webdriver.ChromeOptions()
-    options.add_argument(f"--user-data-dir={CHROME_PROFILE_DIR}")
+    options = webdriver.EdgeOptions()
+    options.add_argument(f"--user-data-dir={EDGE_PROFILE_DIR}")
     options.add_argument("--profile-directory=Default")
     options.add_argument("--window-size=1200,900")
     options.add_argument("--no-first-run")
@@ -93,9 +93,9 @@ def _create_browser():
     options.add_argument("--disable-extensions")
 
     try:
-        driver = webdriver.Chrome(options=options)
+        driver = webdriver.Edge(options=options)
     except Exception:
-        logger.exception("Could not start Chrome. Is Google Chrome installed?")
+        logger.exception("Could not start Edge. Is Microsoft Edge installed?")
         return None
 
     driver.get("https://web.whatsapp.com")
@@ -105,7 +105,7 @@ def _create_browser():
 def _browser_is_alive(driver) -> bool:
     """Check whether an existing driver's browser window/session is still
     usable, so we can reuse it instead of always spawning a brand new
-    Chrome process (which is what was causing "browser restarts between
+    Edge process (which is what was causing "browser restarts between
     every file" — see WhatsAppSession.start())."""
     if driver is None:
         return False
@@ -516,7 +516,7 @@ def _attach_and_send_document(driver, file_path: Path, caption: str) -> bool:
 # ---------------------------------------------------------------------------
 
 class WhatsAppSession:
-    """Keeps one Chrome + WhatsApp Web session open across multiple sends.
+    """Keeps one Edge + WhatsApp Web session open across multiple sends.
 
     Usage in app.py:
         session = WhatsAppSession()
@@ -535,8 +535,8 @@ class WhatsAppSession:
         return self.driver is not None and self._group_open
 
     def start(self) -> bool:
-        """Open Chrome, load WhatsApp Web, open the group.
-        Waits 15 seconds between failed attempts to avoid Chrome spam.
+        """Open Edge, load WhatsApp Web, open the group.
+        Waits 15 seconds between failed attempts to avoid Edge spam.
         Returns True if ready to send."""
         if not _SELENIUM_AVAILABLE:
             logger.error("selenium not installed. Run: pip install selenium")
@@ -552,7 +552,7 @@ class WhatsAppSession:
         # is_ready() was False — which includes right after a single
         # failed send (send() sets _group_open = False to force a
         # re-open). That meant EVERY send failure spawned a brand new
-        # Chrome window (via the SingletonLock removal hack killing the
+        # Edge window (via the SingletonLock removal hack killing the
         # old process), i.e. "the browser restarts between files" — when
         # really all that was needed was to re-open the group chat in
         # the browser that was already open.
@@ -566,7 +566,7 @@ class WhatsAppSession:
                 self._last_failed_at = time.time()
                 return False
             else:
-                logger.warning("Existing browser session is no longer usable — restarting Chrome.")
+                logger.warning("Existing browser session is no longer usable — restarting Edge.")
                 try:
                     self.driver.quit()
                 except Exception:

@@ -40,8 +40,8 @@ to work.
 | `output/`                | Temporary - holds CSVs briefly before they're sent. Cleared automatically after a successful send |
 | `data_archive/txt/`      | Permanent copy of every TXT file ever processed (dated)   |
 | `data_archive/csv/`      | Permanent copy of every CSV file ever generated (dated)   |
-| `chrome_profile/`        | Created automatically - stores your WhatsApp Web login    |
-| `chrome_profile_downloader/` | Created automatically - stores your Bank Albilad portal login |
+| `edge_profile/`          | Created automatically - stores your WhatsApp Web login (Microsoft Edge) |
+| `chrome_profile_downloader/` | Created automatically - stores your Bank Albilad portal login (Chrome) |
 
 ## One-time setup
 
@@ -50,8 +50,9 @@ to work.
    ```
    pip install -r requirements.txt
    ```
-3. Install Google Chrome if it isn't already installed (needed for both
-   WhatsApp Web and portal automation).
+3. Make sure both Microsoft Edge (used for WhatsApp Web) and Google
+   Chrome (used for the Bank Albilad portal) are installed. Edge comes
+   preinstalled on Windows.
 4. Open `config.py` and set:
    - `WHATSAPP_GROUP_NAME` — the **exact** name of your WhatsApp group
      (capitalization and spelling must match exactly).
@@ -80,11 +81,12 @@ python scheduler.py
 python app.py
 ```
 
-- The first time `app.py` runs, a Chrome window will open showing a
+- The first time `app.py` runs, an Edge window will open showing a
   WhatsApp Web QR code. Open WhatsApp on your phone, go to
   **Settings > Linked Devices > Link a Device**, and scan it. After that
-  the login is remembered (`chrome_profile/`), so you shouldn't need to
-  scan again.
+  the login is remembered (`edge_profile/`), so you shouldn't need to
+  scan again. `app.py` now keeps this window open for the whole run
+  instead of closing it between sends.
 - The first time `scheduler.py` triggers a download, a separate Chrome
   window logs into the Bank Albilad portal; that login is remembered too
   (`chrome_profile_downloader/`).
