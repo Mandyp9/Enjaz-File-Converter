@@ -69,7 +69,7 @@
   },
   "JANAKI FINANCE CO LTD": {
     "code": "25",
-    "aliases": ["JANA", "JANAKI FINANCE"]
+    "aliases": ["JANAKI FINANCE"]
   },
   "JYOTI BIKASH BANK": {
     "code": "26",
@@ -89,7 +89,7 @@
   },
   "LAXMI BANK LTD": {
     "code": "36",
-    "aliases": ["LAXM", "LAXMI BANK"]
+    "aliases": ["LAXMI BANK"]
   },
   "LUMBINI BIKAS BANK LTD": {
     "code": "37",
@@ -101,7 +101,7 @@
   },
   "MAHALAXMI BIKASH BANK": {
     "code": "40",
-    "aliases": ["MAHA", "MAHALAXMI BIKASH BANK", "MAHALAXMI BANK"]
+    "aliases": ["MAHA", "MAHALAXMI BIKASH BANK", "MAHALAXMI BANK", "MAHALAXMI BIKAS BANK"]
   },
   "MANJUSHREE FINANCE LIMITED": {
     "code": "42",
@@ -201,7 +201,7 @@
   },
   "SHREE INVESTMENT FINANCE CO LTD": {
     "code": "78",
-    "aliases": ["SHRE", "SHREE INVESTMENT FINANCE"]
+    "aliases": ["SHREE INVESTMENT FINANCE"]
   },
   "SIDDHARTHA BANK LTD": {
     "code": "79",
@@ -221,7 +221,7 @@
   },
   "LAXMI SUNRISE BANK LTD": {
     "code": "84",
-    "aliases": ["LAXM", "LAXMI SUNRISE", "SUNRISE BANK", "LAXMI SUNRISE BANK"]
+    "aliases": ["LAXMI SUNRISE", "SUNRISE BANK", "LAXMI SUNRISE BANK"]
   },
   "UNITED FINANCE LTD": {
     "code": "87",

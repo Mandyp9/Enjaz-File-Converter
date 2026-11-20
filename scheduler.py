@@ -233,6 +233,15 @@ def run_scheduler() -> None:
         # waiting for during idle periods (previously this was DEBUG-only,
         # so a quiet stretch between slots looked identical to a frozen
         # process). Throttled so it doesn't spam every 30s tick.
+        #
+        # Re-fetch 'now' here rather than reusing the value from the top
+        # of this iteration: a portal check above can take 20+ seconds
+        # (login, download, etc), so the original 'now' can be stale
+        # enough to have crossed a slot's window-close boundary by the
+        # time we get here — which previously showed the slot that was
+        # JUST completed as "next slot ... in 0 min" instead of correctly
+        # rolling over to the actual next one.
+        now = datetime.now()
         if (now - last_heartbeat).total_seconds() >= config.HEARTBEAT_INTERVAL_SECONDS:
             next_slot = next_slot_time(now, schedule)
             if next_slot:

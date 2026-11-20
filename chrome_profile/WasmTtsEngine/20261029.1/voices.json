@@ -1,0 +1,1779 @@
+[
+  {
+    "id": "en-us-x-multi",
+    "fileId": "en-us-x-multi-r85",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/en-us/en-us-x-multi-r85.zvoice",
+    "sha256Checksum": "6e85555455ef585993eb253f887ac4b673ad4f08794b8e914bb4cd219f1a81fd",
+    "compressedSize": 14728149,
+    "speakers": [
+      {
+        "speaker": "sfg",
+        "name": "Chrome OS US English 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "iob",
+        "name": "Chrome OS US English 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "iog",
+        "name": "Chrome OS US English 3",
+        "gender": "female"
+      },
+      {
+        "speaker": "iol",
+        "name": "Chrome OS US English 4",
+        "gender": "male"
+      },
+      {
+        "speaker": "iom",
+        "name": "Chrome OS US English 5",
+        "gender": "male"
+      },
+      {
+        "speaker": "tpc",
+        "name": "Chrome OS US English 6",
+        "gender": "female"
+      },
+      {
+        "speaker": "tpd",
+        "name": "Chrome OS US English 7",
+        "gender": "male"
+      },
+      {
+        "speaker": "tpf",
+        "name": "Chrome OS US English 8",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "en-gb-x-multi",
+    "fileId": "en-gb-x-multi-r70",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/en-gb/en-gb-x-multi-r70.zvoice",
+    "sha256Checksum": "6b718acbc585e3e72808b34f74cb9f54b8064f28c04ae7d7752df533998c4f8f",
+    "compressedSize": 11629958,
+    "speakers": [
+      {
+        "speaker": "fis",
+        "name": "Chrome OS UK English 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "rjs",
+        "name": "Chrome OS UK English 2",
+        "gender": "male"
+      },
+      {
+        "speaker": "gba",
+        "name": "Chrome OS UK English 3",
+        "gender": "female"
+      },
+      {
+        "speaker": "gbb",
+        "name": "Chrome OS UK English 4",
+        "gender": "male"
+      },
+      {
+        "speaker": "gbc",
+        "name": "Chrome OS UK English 5",
+        "gender": "female"
+      },
+      {
+        "speaker": "gbd",
+        "name": "Chrome OS UK English 6",
+        "gender": "male"
+      },
+      {
+        "speaker": "gbg",
+        "name": "Chrome OS UK English 7",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "pt-br-x-multi",
+    "fileId": "pt-br-x-multi-r66",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/pt-br/pt-br-x-multi-r66.zvoice",
+    "sha256Checksum": "1f073fc7270b7f88e017236eafd00751e5474a4a9d3264b21c3eb97f7ef378a2",
+    "compressedSize": 9208614,
+    "speakers": [
+      {
+        "speaker": "afs",
+        "name": "Chrome OS portugu\u00eas do Brasil",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "es-us-x-multi",
+    "fileId": "es-us-x-multi-r68",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/es-us/es-us-x-multi-r68.zvoice",
+    "sha256Checksum": "f92e0c5cd0fa61c554f0e55cf5f4ed32b7f9e55ba2483026396c4e4a487cf02b",
+    "compressedSize": 9691733,
+    "speakers": [
+      {
+        "speaker": "sfb",
+        "name": "Chrome OS espa\u00f1ol de Estados Unidos",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "hi-in-x-multi",
+    "fileId": "hi-in-x-multi-r64",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/hi-in/hi-in-x-multi-r64.zvoice",
+    "sha256Checksum": "0b9ca5966d5af6fdf358a12453f937fced3ab2457d7fa55637431533c051c890",
+    "compressedSize": 17383320,
+    "speakers": [
+      {
+        "speaker": "cfn",
+        "name": "Chrome OS \u0939\u093f\u0928\u094d\u0926\u0940 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "hia",
+        "name": "Chrome OS \u0939\u093f\u0928\u094d\u0926\u0940 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "hic",
+        "name": "Chrome OS \u0939\u093f\u0928\u094d\u0926\u0940  3",
+        "gender": "female"
+      },
+      {
+        "speaker": "hid",
+        "name": "Chrome OS \u0939\u093f\u0928\u094d\u0926\u0940  4",
+        "gender": "male"
+      },
+      {
+        "speaker": "hie",
+        "name": "Chrome OS \u0939\u093f\u0928\u094d\u0926\u0940  5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "en-au-x-multi",
+    "fileId": "en-au-x-multi-r68",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/en-au/en-au-x-multi-r68.zvoice",
+    "sha256Checksum": "693cf0ca127183d8ebf25df6885d9245e97636e9c8091f9907c32e3355a30a20",
+    "compressedSize": 11093285,
+    "speakers": [
+      {
+        "speaker": "afh",
+        "name": "Chrome OS Australian English 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "aua",
+        "name": "Chrome OS Australian English 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "aub",
+        "name": "Chrome OS Australian English 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "auc",
+        "name": "Chrome OS Australian English 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "aud",
+        "name": "Chrome OS Australian English 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "fr-fr-x-multi",
+    "fileId": "fr-fr-x-multi-r64",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/fr-fr/fr-fr-x-multi-r64.zvoice",
+    "sha256Checksum": "3b27fd662735925f57473b4ea502b2ecb80da85d028a96e1567b63eaf5001c2d",
+    "compressedSize": 17882811,
+    "speakers": [
+      {
+        "speaker": "vlf",
+        "name": "Chrome OS fran\u00e7ais 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "fra",
+        "name": "Chrome OS fran\u00e7ais 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "frb",
+        "name": "Chrome OS fran\u00e7ais 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "frc",
+        "name": "Chrome OS fran\u00e7ais 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "frd",
+        "name": "Chrome OS fran\u00e7ais 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "de-de-x-multi",
+    "fileId": "de-de-x-multi-r64",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/de-de/de-de-x-multi-r64.zvoice",
+    "sha256Checksum": "f931ed9f8922567a5bd928370544b5efd8bb50b346a8233ff01140d9e1cb4e30",
+    "compressedSize": 15165197,
+    "speakers": [
+      {
+        "speaker": "nfh",
+        "name": "Chrome OS Deutsch 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "deb",
+        "name": "Chrome OS Deutsch 2",
+        "gender": "male"
+      },
+      {
+        "speaker": "deg",
+        "name": "Chrome OS Deutsch 3",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "es-es-x-multi",
+    "fileId": "es-es-x-multi-r61",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/es-es/es-es-x-multi-r61.zvoice",
+    "sha256Checksum": "e85de55adc152aaa4f59a61d2167f9ac0a542d21b469c600c18d511a49d0e7c8",
+    "compressedSize": 9127717,
+    "speakers": [
+      {
+        "speaker": "eea",
+        "name": "Chrome OS espa\u00f1ol 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "eec",
+        "name": "Chrome OS espa\u00f1ol 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "eed",
+        "name": "Chrome OS espa\u00f1ol 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "eee",
+        "name": "Chrome OS espa\u00f1ol 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "eef",
+        "name": "Chrome OS espa\u00f1ol 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "ko-kr-x-multi",
+    "fileId": "ko-kr-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/ko-kr/ko-kr-x-multi-r58.zvoice",
+    "sha256Checksum": "0fda971cee7fa96a2abe48d43115a642b0b2c2425764e232979cfac308481c4c",
+    "compressedSize": 9852589,
+    "speakers": [
+      {
+        "speaker": "ism",
+        "name": "Chrome OS \ud55c\uad6d\uc5b4 1",
+        "gender": "male"
+      },
+      {
+        "speaker": "kob",
+        "name": "Chrome OS \ud55c\uad6d\uc5b4 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "koc",
+        "name": "Chrome OS \ud55c\uad6d\uc5b4 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "kod",
+        "name": "Chrome OS \ud55c\uad6d\uc5b4 4",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "nl-nl-x-multi",
+    "fileId": "nl-nl-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/nl-nl/nl-nl-x-multi-r58.zvoice",
+    "sha256Checksum": "fc64c3bb0c058d6e7ee9a5c3a60bab94bdc957b20bb886cd9ea3fc598d79459d",
+    "compressedSize": 8164081,
+    "speakers": [
+      {
+        "speaker": "tfb",
+        "name": "Chrome OS Nederlands 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "bmh",
+        "name": "Chrome OS Nederlands 2",
+        "gender": "male"
+      },
+      {
+        "speaker": "dma",
+        "name": "Chrome OS Nederlands 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "lfc",
+        "name": "Chrome OS Nederlands 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "yfr",
+        "name": "Chrome OS Nederlands 5",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "pl-pl-x-multi",
+    "fileId": "pl-pl-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/pl-pl/pl-pl-x-multi-r58.zvoice",
+    "sha256Checksum": "d971016e34a4514e8b05c50de23eaaeed4934a54b8188fa162b691422574fd19",
+    "compressedSize": 10815276,
+    "speakers": [
+      {
+        "speaker": "oda",
+        "name": "Chrome OS Polski 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "afb",
+        "name": "Chrome OS Polski 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "bmg",
+        "name": "Chrome OS Polski 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "jmk",
+        "name": "Chrome OS Polski 4",
+        "gender": "male"
+      },
+      {
+        "speaker": "zfg",
+        "name": "Chrome OS Polski 5",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "id-id-x-multi",
+    "fileId": "id-id-x-multi-r60",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/id-id/id-id-x-multi-r60.zvoice",
+    "sha256Checksum": "3661f5df3cefd7adc7327ed517dc38a6bdc5b75cb7697147fc93132c53fd03f1",
+    "compressedSize": 4615275,
+    "speakers": [
+      {
+        "speaker": "dfz",
+        "name": "Chrome OS Bahasa Indonesia 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "idc",
+        "name": "Chrome OS Bahasa Indonesia 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "idd",
+        "name": "Chrome OS Bahasa Indonesia 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "ide",
+        "name": "Chrome OS Bahasa Indonesia 4",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "tr-tr-x-multi",
+    "fileId": "tr-tr-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/tr-tr/tr-tr-x-multi-r58.zvoice",
+    "sha256Checksum": "580b8c81da01eb16f37f4f80916748da897eb47ee7920ddda326a75262768fd0",
+    "compressedSize": 6405231,
+    "speakers": [
+      {
+        "speaker": "mfm",
+        "name": "Chrome OS T\u00fcrk\u00e7e 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "ama",
+        "name": "Chrome OS T\u00fcrk\u00e7e 2",
+        "gender": "male"
+      },
+      {
+        "speaker": "cfs",
+        "name": "Chrome OS T\u00fcrk\u00e7e 3",
+        "gender": "female"
+      },
+      {
+        "speaker": "efu",
+        "name": "Chrome OS T\u00fcrk\u00e7e 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "tmc",
+        "name": "Chrome OS T\u00fcrk\u00e7e 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "yue-hk-x-multi",
+    "fileId": "yue-hk-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/yue-hk/yue-hk-x-multi-r58.zvoice",
+    "sha256Checksum": "a02aff24b19de965edc72aff7ae3de3214a54a66de1a8e30896aa52c0f68e9d3",
+    "compressedSize": 27439771,
+    "speakers": [
+      {
+        "speaker": "jar",
+        "name": "Chrome OS \u7cb5\u8a9e 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "yuc",
+        "name": "Chrome OS \u7cb5\u8a9e 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "yud",
+        "name": "Chrome OS \u7cb5\u8a9e 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "yue",
+        "name": "Chrome OS \u7cb5\u8a9e 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "yuf",
+        "name": "Chrome OS \u7cb5\u8a9e 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "nb-no-x-multi",
+    "fileId": "nb-no-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/nb-no/nb-no-x-multi-r58.zvoice",
+    "sha256Checksum": "5d6ff699dbb7d55e47aa81fa4f4f602a93145654c02ca306caaa86eddedf0469",
+    "compressedSize": 5257600,
+    "speakers": [
+      {
+        "speaker": "rfj",
+        "name": "Chrome OS Norsk Bokm\u00e5l 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "cfl",
+        "name": "Chrome OS Norsk Bokm\u00e5l 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "cmj",
+        "name": "Chrome OS Norsk Bokm\u00e5l 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "tfs",
+        "name": "Chrome OS Norsk Bokm\u00e5l 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "tmg",
+        "name": "Chrome OS Norsk Bokm\u00e5l 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "fi-fi-x-multi",
+    "fileId": "fi-fi-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/fi-fi/fi-fi-x-multi-r58.zvoice",
+    "sha256Checksum": "968b7d4288765f688db0705da2ca25d32b3f3e68bde5ec77c3836823adf257a1",
+    "compressedSize": 8590921,
+    "speakers": [
+      {
+        "speaker": "afi",
+        "name": "Chrome OS Suomi",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "vi-vn-x-multi",
+    "fileId": "vi-vn-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/vi-vn/vi-vn-x-multi-r58.zvoice",
+    "sha256Checksum": "d5c8024673c137b772d1e62b95ffdd18b8c55e22c300ed9e57a3b7428af2b11c",
+    "compressedSize": 7574840,
+    "speakers": [
+      {
+        "speaker": "gft",
+        "name": "Chrome OS Ti\u1ebfng Vi\u1ec7t 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "vic",
+        "name": "Chrome OS Ti\u1ebfng Vi\u1ec7t 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "vid",
+        "name": "Chrome OS Ti\u1ebfng Vi\u1ec7t 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "vie",
+        "name": "Chrome OS Ti\u1ebfng Vi\u1ec7t 4",
+        "gender": "female"
+      },
+      {
+        "speaker": "vif",
+        "name": "Chrome OS Ti\u1ebfng Vi\u1ec7t 5",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "pt-pt-x-multi",
+    "fileId": "pt-pt-x-multi-r56",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/pt-pt/pt-pt-x-multi-r56.zvoice",
+    "sha256Checksum": "fdcaa5141c57a1b642e9ca54f000753b3c55dcd20a80861eae7669fea02c466e",
+    "compressedSize": 14440919,
+    "speakers": [
+      {
+        "speaker": "ifm",
+        "name": "Chrome OS portugu\u00eas de Portugal",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "it-it-x-multi",
+    "fileId": "it-it-x-multi-r59",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/it-it/it-it-x-multi-r59.zvoice",
+    "sha256Checksum": "db0ef1bffb03948ef25e0f41cfbc7a2d33a73a6016606e73b6c86b0dfc08554c",
+    "compressedSize": 9352845,
+    "speakers": [
+      {
+        "speaker": "kda",
+        "name": "Chrome OS italiano 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "itb",
+        "name": "Chrome OS italiano 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "itc",
+        "name": "Chrome OS italiano 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "itd",
+        "name": "Chrome OS italiano 4",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "th-th-x-multi",
+    "fileId": "th-th-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/th-th/th-th-x-multi-r58.zvoice",
+    "sha256Checksum": "2f99ea6e915438dd478ba03fce936ec3f864ff0cac189e20a9b0d0433056058c",
+    "compressedSize": 8679486,
+    "speakers": [
+      {
+        "speaker": "thc",
+        "name": "Chrome OS \u0e44\u0e17\u0e22 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "thd",
+        "name": "Chrome OS \u0e44\u0e17\u0e22 2",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "da-dk-x-multi",
+    "fileId": "da-dk-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/da-dk/da-dk-x-multi-r58.zvoice",
+    "sha256Checksum": "512bc07ffbfc60642e5ec435bda14381d133d09f18c825b6ecfce0789ce0bca0",
+    "compressedSize": 7538234,
+    "speakers": [
+      {
+        "speaker": "kfm",
+        "name": "Chrome OS Dansk 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "nmm",
+        "name": "Chrome OS Dansk 2",
+        "gender": "male"
+      },
+      {
+        "speaker": "sfp",
+        "name": "Chrome OS Dansk 3",
+        "gender": "female"
+      },
+      {
+        "speaker": "vfb",
+        "name": "Chrome OS Dansk 4",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "hu-hu-x-multi",
+    "fileId": "hu-hu-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/hu-hu/hu-hu-x-multi-r58.zvoice",
+    "sha256Checksum": "75f85b81ea79bb3b1e4298fdeda8937cbff13b70d9d3bf1a8863369a3d61a7ed",
+    "compressedSize": 6549753,
+    "speakers": [
+      {
+        "speaker": "kfl",
+        "name": "Chrome OS Magyar",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "bn-bd-x-multi",
+    "fileId": "bn-bd-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/bn-bd/bn-bd-x-multi-r58.zvoice",
+    "sha256Checksum": "f2e607e6ac07b85078c4b89789acbc18550e6c330972e6a761d665631ab4b1c7",
+    "compressedSize": 9379096,
+    "speakers": [
+      {
+        "speaker": "ban",
+        "name": "Chrome OS \u09ac\u09be\u0982\u09b2\u09be",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "sv-se-x-multi",
+    "fileId": "sv-se-x-multi-r59",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/sv-se/sv-se-x-multi-r59.zvoice",
+    "sha256Checksum": "095794c4cbbd568740192da5d4eef5adf2025083c8176e7260c2d71ca4f29e33",
+    "compressedSize": 6453685,
+    "speakers": [
+      {
+        "speaker": "lfs",
+        "name": "Chrome OS Svenska",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "cs-cz-x-multi",
+    "fileId": "cs-cz-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/cs-cz/cs-cz-x-multi-r58.zvoice",
+    "sha256Checksum": "c0cb7d5f821d3c680f7e2eaf8020ebad4ed62957e7e6464b6d259c5f431f1ef6",
+    "compressedSize": 8502943,
+    "speakers": [
+      {
+        "speaker": "jfs",
+        "name": "Chrome OS \u010de\u0161tina",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "km-kh-x-multi",
+    "fileId": "km-kh-x-multi-r57",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/km-kh/km-kh-x-multi-r57.zvoice",
+    "sha256Checksum": "9f1479f00a6bc3c9bbffc196dc37743cf648178be964996e1af0ec64c6cec71f",
+    "compressedSize": 4860853,
+    "speakers": [
+      {
+        "speaker": "khm",
+        "name": "Chrome OS \u1781\u17d2\u1798\u17c2\u179a",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "si-lk-x-multi",
+    "fileId": "si-lk-x-multi-r59",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/si-lk/si-lk-x-multi-r59.zvoice",
+    "sha256Checksum": "7b7d0c08cbc2be3e1d1cd9717784fe36a5bdcd0654f86f16faad2643c6eb9eff",
+    "compressedSize": 3889865,
+    "speakers": [
+      {
+        "speaker": "sin",
+        "name": "Chrome OS \u0dc3\u0dd2\u0d82\u0dc4\u0dbd",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "uk-ua-x-multi",
+    "fileId": "uk-ua-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/uk-ua/uk-ua-x-multi-r58.zvoice",
+    "sha256Checksum": "dc758a08fabf93091b2c157f2c3ea477a0ac6538c55d1711a22354d1c5d0ed50",
+    "compressedSize": 15019499,
+    "speakers": [
+      {
+        "speaker": "hfd",
+        "name": "Chrome OS \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "ne-np-x-multi",
+    "fileId": "ne-np-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/ne-np/ne-np-x-multi-r58.zvoice",
+    "sha256Checksum": "401cc4b911242e7b1fd436fb26fc93ef56e3153bd390ed66e96fe5fba259d667",
+    "compressedSize": 4977187,
+    "speakers": [
+      {
+        "speaker": "nep",
+        "name": "Chrome OS \u0928\u0947\u092a\u093e\u0932\u0940",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "el-gr-x-multi",
+    "fileId": "el-gr-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/el-gr/el-gr-x-multi-r58.zvoice",
+    "sha256Checksum": "0c7ac5efdf7e3cc401743ad8709f9a760c8b322be2c802dd57b80fa03b5e80b9",
+    "compressedSize": 11302775,
+    "speakers": [
+      {
+        "speaker": "vfz",
+        "name": "Chrome OS \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "fil-ph-x-multi",
+    "fileId": "fil-ph-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/fil-ph/fil-ph-x-multi-r58.zvoice",
+    "sha256Checksum": "dba11eefdb6e0b7749bcdd982c6749e1b99b8e94ac931326a1975198be8f0c3b",
+    "compressedSize": 8251194,
+    "speakers": [
+      {
+        "speaker": "cfc",
+        "name": "Chrome OS Filipino 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "fic",
+        "name": "Chrome OS Filipino 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "fid",
+        "name": "Chrome OS Filipino 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "fie",
+        "name": "Chrome OS Filipino 4",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "sk-sk-x-multi",
+    "fileId": "sk-sk-x-multi-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/sk-sk/sk-sk-x-multi-r58.zvoice",
+    "sha256Checksum": "24055a536fb3e00b5f1653d21924d378cf6837dfb84bc246c8729de6eac63aca",
+    "compressedSize": 6628220,
+    "speakers": [
+      {
+        "speaker": "sfk",
+        "name": "Chrome OS Sloven\u010dina",
+        "gender": "female"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "ja-jp-x-multi",
+    "fileId": "ja-jp-x-multi-r60",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/ja-jp/ja-jp-x-multi-r60.zvoice",
+    "sha256Checksum": "ab9ba31e51a167b83a13b1e363243bcb87787a9d1a3b48e0ad599b4bc3b9b04f",
+    "compressedSize": 28519486,
+    "speakers": [
+      {
+        "speaker": "jab",
+        "name": "Chrome OS \u65e5\u672c\u8a9e 1",
+        "gender": "female"
+      },
+      {
+        "speaker": "htm",
+        "name": "Chrome OS \u65e5\u672c\u8a9e 2",
+        "gender": "female"
+      },
+      {
+        "speaker": "jac",
+        "name": "Chrome OS \u65e5\u672c\u8a9e 3",
+        "gender": "male"
+      },
+      {
+        "speaker": "jad",
+        "name": "Chrome OS \u65e5\u672c\u8a9e 4",
+        "gender": "male"
+      }
+    ],
+    "remote": true
+  },
+  {
+    "id": "en-gb-x-multi-seanet",
+    "fileId": "en-gb-x-multi-seanet-r70",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/en-gb/en-gb-x-multi-seanet-r70.zvoice",
+    "sha256Checksum": "f8480da69d5241ab30a189f697c049f19cb99d09f19d7ea893ca66e782ea92ff",
+    "compressedSize": 3797280,
+    "speakers": [
+      {
+        "speaker": "rjs",
+        "name": "Google UK English 1 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "gba",
+        "name": "Google UK English 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "gbb",
+        "name": "Google UK English 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "gbc",
+        "name": "Google UK English 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "gbd",
+        "name": "Google UK English 5 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "gbg",
+        "name": "Google UK English 6 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "en-gb-x-multi"
+  },
+  {
+    "id": "en-us-x-multi-seanet",
+    "fileId": "en-us-x-multi-seanet-r85",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/en-us/en-us-x-multi-seanet-r85.zvoice",
+    "sha256Checksum": "18028065411841efd4199daf833efd74280e7c66e332a567d4c57424b2c049fc",
+    "compressedSize": 4217975,
+    "speakers": [
+      {
+        "speaker": "iob",
+        "name": "Google US English 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "iog",
+        "name": "Google US English 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "iol",
+        "name": "Google US English 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "iom",
+        "name": "Google US English 4 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "tpc",
+        "name": "Google US English 5 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "tpd",
+        "name": "Google US English 6 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "tpf",
+        "name": "Google US English 7 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "en-us-x-multi"
+  },
+  {
+    "id": "de-de-x-multi-seanet",
+    "fileId": "de-de-x-multi-seanet-r64",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/de-de/de-de-x-multi-seanet-r64.zvoice",
+    "sha256Checksum": "5bfc36845cb87cddc4aba893a03633444ded7ca27a524e83c7ec35f083e4c16a",
+    "compressedSize": 3728364,
+    "speakers": [
+      {
+        "speaker": "nfh",
+        "name": "Google Deutsch 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "dea",
+        "name": "Google Deutsch 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "deb",
+        "name": "Google Deutsch 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "deg",
+        "name": "Google Deutsch 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "de-de-x-multi"
+  },
+  {
+    "id": "fr-fr-x-multi-seanet",
+    "fileId": "fr-fr-x-multi-seanet-r64",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/fr-fr/fr-fr-x-multi-seanet-r64.zvoice",
+    "sha256Checksum": "78c2b68472786b0984589cc60c39999b9672e22ff540a3d3cf491c5434fab1e9",
+    "compressedSize": 4242780,
+    "speakers": [
+      {
+        "speaker": "vlf",
+        "name": "Google fran\u00e7ais 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "fra",
+        "name": "Google fran\u00e7ais 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "frb",
+        "name": "Google fran\u00e7ais 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "frc",
+        "name": "Google fran\u00e7ais 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "frd",
+        "name": "Google fran\u00e7ais 5 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "fr-fr-x-multi"
+  },
+  {
+    "id": "hi-in-x-multi-seanet",
+    "fileId": "hi-in-x-multi-seanet-r64",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/hi-in/hi-in-x-multi-seanet-r64.zvoice",
+    "sha256Checksum": "c7ed38caf2ffbcda0ea9f3288df7a8ae58730c6a6437f419944c4a0c92ef7532",
+    "compressedSize": 3686414,
+    "speakers": [
+      {
+        "speaker": "hia",
+        "name": "Google \u0939\u093f\u0928\u094d\u0926\u0940 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "hic",
+        "name": "Google \u0939\u093f\u0928\u094d\u0926\u0940 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "hid",
+        "name": "Google \u0939\u093f\u0928\u094d\u0926\u0940 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "hie",
+        "name": "Google \u0939\u093f\u0928\u094d\u0926\u0940 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "hi-in-x-multi"
+  },
+  {
+    "id": "pt-br-x-multi-seanet",
+    "fileId": "pt-br-x-multi-seanet-r66",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/pt-br/pt-br-x-multi-seanet-r66.zvoice",
+    "sha256Checksum": "69d3383ec743c1512c09df881e33ea26a0aca9b01e43ade80f3ab9cdce447f23",
+    "compressedSize": 3733511,
+    "speakers": [
+      {
+        "speaker": "afs",
+        "name": "Google portugu\u00eas do Brasil 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "ptd",
+        "name": "Google portugu\u00eas do Brasil 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "pte",
+        "name": "Google portugu\u00eas do Brasil 3 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "pt-br-x-multi"
+  },
+  {
+    "id": "th-th-x-multi-seanet",
+    "fileId": "th-th-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/th-th/th-th-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "f64ac6f8e51207ab4aa2d4e91e31553a4ebdd65aad3e3f6f9bd4423e37490db9",
+    "compressedSize": 3732579,
+    "speakers": [
+      {
+        "speaker": "thc",
+        "name": "Google \u0e44\u0e17\u0e22 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "th-th-x-multi"
+  },
+  {
+    "id": "es-es-x-multi-seanet",
+    "fileId": "es-es-x-multi-seanet-r61",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/es-es/es-es-x-multi-seanet-r61.zvoice",
+    "sha256Checksum": "e7ff4ddd7176bf53eb2f85d40ad41099414fe441397828658c2d89e9aa8f8710",
+    "compressedSize": 3666204,
+    "speakers": [
+      {
+        "speaker": "eea",
+        "name": "Google espa\u00f1ol 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "eec",
+        "name": "Google espa\u00f1ol 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "eed",
+        "name": "Google espa\u00f1ol 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "eee",
+        "name": "Google espa\u00f1ol 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "eef",
+        "name": "Google espa\u00f1ol 5 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "es-es-x-multi"
+  },
+  {
+    "id": "sv-se-x-multi-seanet",
+    "fileId": "sv-se-x-multi-seanet-r59",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/sv-se/sv-se-x-multi-seanet-r59.zvoice",
+    "sha256Checksum": "9f87fd587d175ab6675dd2f63278e252372f643cce98d7eec9dedc8a89f4affa",
+    "compressedSize": 3687938,
+    "speakers": [
+      {
+        "speaker": "lfs",
+        "name": "Google Svenska 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "afp",
+        "name": "Google Svenska 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "cfg",
+        "name": "Google Svenska 3 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "cmh",
+        "name": "Google Svenska 4 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "dmc",
+        "name": "Google Svenska 5 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "sv-se-x-multi"
+  },
+  {
+    "id": "es-us-x-multi-seanet",
+    "fileId": "es-us-x-multi-seanet-r68",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/es-us/es-us-x-multi-seanet-r68.zvoice",
+    "sha256Checksum": "e8bd326919736956cd3432e131982ad1aec1ccc1a9fe9af24544dc0ad4aaacd4",
+    "compressedSize": 3743052,
+    "speakers": [
+      {
+        "speaker": "sfb",
+        "name": "Google espa\u00f1ol de Estados Unidos 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "esc",
+        "name": "Google espa\u00f1ol de Estados Unidos 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "esd",
+        "name": "Google espa\u00f1ol de Estados Unidos 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "esf",
+        "name": "Google espa\u00f1ol de Estados Unidos 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "es-us-x-multi"
+  },
+  {
+    "id": "it-it-x-multi-seanet",
+    "fileId": "it-it-x-multi-seanet-r59",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/it-it/it-it-x-multi-seanet-r59.zvoice",
+    "sha256Checksum": "12dc5cd3b8791ea9512a481ddf2806e1624ec4311d1ce63f635ee854dd793bea",
+    "compressedSize": 3665308,
+    "speakers": [
+      {
+        "speaker": "kda",
+        "name": "Google italiano 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "itb",
+        "name": "Google italiano 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "itc",
+        "name": "Google italiano 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "itd",
+        "name": "Google italiano 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "it-it-x-multi"
+  },
+  {
+    "id": "en-au-x-multi-seanet",
+    "fileId": "en-au-x-multi-seanet-r68",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/en-au/en-au-x-multi-seanet-r68.zvoice",
+    "sha256Checksum": "0f538a78700372a167597efb1d27ab15454908e5adaae01bafc6933668a7b8a4",
+    "compressedSize": 4203826,
+    "speakers": [
+      {
+        "speaker": "aua",
+        "name": "Google Australian English 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "aub",
+        "name": "Google Australian English 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "auc",
+        "name": "Google Australian English 3 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "aud",
+        "name": "Google Australian English 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "en-au-x-multi"
+  },
+  {
+    "id": "pt-pt-x-multi-seanet",
+    "fileId": "pt-pt-x-multi-seanet-r56",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/pt-pt/pt-pt-x-multi-seanet-r56.zvoice",
+    "sha256Checksum": "d50e30cc195e5da5e77913388879ae2b8a73faf3ea77514ec01a82e0341006b8",
+    "compressedSize": 8739250,
+    "speakers": [
+      {
+        "speaker": "jfb",
+        "name": "Google portugu\u00eas de Portugal 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "jmn",
+        "name": "Google portugu\u00eas de Portugal 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "pmj",
+        "name": "Google portugu\u00eas de Portugal 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "sfs",
+        "name": "Google portugu\u00eas de Portugal 4 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "pt-pt-x-multi"
+  },
+  {
+    "id": "ko-kr-x-multi-seanet",
+    "fileId": "ko-kr-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/ko-kr/ko-kr-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "2d177e528f07930af0e7a23b042b1c50595d2e86cbae5e32f346035a5e8e8d34",
+    "compressedSize": 3693351,
+    "speakers": [
+      {
+        "speaker": "ism",
+        "name": "Google \ud55c\uad6d\uc5b4 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "kob",
+        "name": "Google \ud55c\uad6d\uc5b4 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "koc",
+        "name": "Google \ud55c\uad6d\uc5b4 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "kod",
+        "name": "Google \ud55c\uad6d\uc5b4 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "ko-kr-x-multi"
+  },
+  {
+    "id": "id-id-x-multi-seanet",
+    "fileId": "id-id-x-multi-seanet-r60",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/id-id/id-id-x-multi-seanet-r60.zvoice",
+    "sha256Checksum": "e9dd6af15eb18cb18745d5165594619896641c4c4ae901e91b71d62124c1ffc9",
+    "compressedSize": 3674012,
+    "speakers": [
+      {
+        "speaker": "dfz",
+        "name": "Google Bahasa Indonesia 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "idc",
+        "name": "Google Bahasa Indonesia 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "idd",
+        "name": "Google Bahasa Indonesia 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "ide",
+        "name": "Google Bahasa Indonesia 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "id-id-x-multi"
+  },
+  {
+    "id": "tr-tr-x-multi-seanet",
+    "fileId": "tr-tr-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/tr-tr/tr-tr-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "c012e601c035c25865b976c43eb96223d90e7e4b56f7232a8162d2fd8d5ebd60",
+    "compressedSize": 3832197,
+    "speakers": [
+      {
+        "speaker": "mfm",
+        "name": "Google T\u00fcrk\u00e7e 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "ama",
+        "name": "Google T\u00fcrk\u00e7e 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "cfs",
+        "name": "Google T\u00fcrk\u00e7e 3 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "efu",
+        "name": "Google T\u00fcrk\u00e7e 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "tmc",
+        "name": "Google T\u00fcrk\u00e7e 5 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "tr-tr-x-multi"
+  },
+  {
+    "id": "da-dk-x-multi-seanet",
+    "fileId": "da-dk-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/da-dk/da-dk-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "91e4edd16a03b7411ca95ca291cbbe27a75571e290c5f43b62bc5245d69e7797",
+    "compressedSize": 3739844,
+    "speakers": [
+      {
+        "speaker": "kfm",
+        "name": "Google Dansk 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "nmm",
+        "name": "Google Dansk 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "sfp",
+        "name": "Google Dansk 3 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "vfb",
+        "name": "Google Dansk 4 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "da-dk-x-multi"
+  },
+  {
+    "id": "nb-no-x-multi-seanet",
+    "fileId": "nb-no-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/nb-no/nb-no-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "3e37ba55b14900de8caec69c6b6f4ee71f46654ea7694c0a351c5c4f9e408159",
+    "compressedSize": 3706604,
+    "speakers": [
+      {
+        "speaker": "rfj",
+        "name": "Google Norsk Bokm\u00e5l 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "cfl",
+        "name": "Google Norsk Bokm\u00e5l 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "cmj",
+        "name": "Google Norsk Bokm\u00e5l 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "tfs",
+        "name": "Google Norsk Bokm\u00e5l 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "tmg",
+        "name": "Google Norsk Bokm\u00e5l 5 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "nb-no-x-multi"
+  },
+  {
+    "id": "hu-hu-x-multi-seanet",
+    "fileId": "hu-hu-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/hu-hu/hu-hu-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "20c13b8d2e3eac2376ba912ebe2303d3b68d3d6e7f5154cf738414ab29a5ff4e",
+    "compressedSize": 3680206,
+    "speakers": [
+      {
+        "speaker": "kfl",
+        "name": "Google Magyar (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "hu-hu-x-multi"
+  },
+  {
+    "id": "fi-fi-x-multi-seanet",
+    "fileId": "fi-fi-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/fi-fi/fi-fi-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "557cfe1a64bb4a6e1d542f4340c3d4d6a051f842d1f090ab9294ee1eafd1b6ec",
+    "compressedSize": 5278797,
+    "speakers": [
+      {
+        "speaker": "afi",
+        "name": "Google Suomi (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "fi-fi-x-multi"
+  },
+  {
+    "id": "bn-bd-x-multi-seanet",
+    "fileId": "bn-bd-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/bn-bd/bn-bd-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "d9547f3ebbf31d3c0cc968e9fc17f93a3cb88746306f13d6436b59827503cd29",
+    "compressedSize": 4148161,
+    "speakers": [
+      {
+        "speaker": "ban",
+        "name": "Google \u09ac\u09be\u0982\u09b2\u09be (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "bn-bd-x-multi"
+  },
+  {
+    "id": "cs-cz-x-multi-seanet",
+    "fileId": "cs-cz-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/cs-cz/cs-cz-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "77ab438cbc6b2e934e26a78f3f270ee42d9efa6e0194540e57b4be87ac19d86d",
+    "compressedSize": 3649604,
+    "speakers": [
+      {
+        "speaker": "jfs",
+        "name": "Google \u010de\u0161tina (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "cs-cz-x-multi"
+  },
+  {
+    "id": "si-lk-x-multi-seanet",
+    "fileId": "si-lk-x-multi-seanet-r59",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/si-lk/si-lk-x-multi-seanet-r59.zvoice",
+    "sha256Checksum": "dbc727ce45df49b8dc2ae94648aeddd8208499a981620d49d36a0d6fdba14656",
+    "compressedSize": 5303085,
+    "speakers": [
+      {
+        "speaker": "sin",
+        "name": "Google \u0dc3\u0dd2\u0d82\u0dc4\u0dbd (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "si-lk-x-multi"
+  },
+  {
+    "id": "ne-np-x-multi-seanet",
+    "fileId": "ne-np-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/ne-np/ne-np-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "d3eb5fb66f8baf3ba37555d377ea7fb621ad2ff2205524e9d93c51475174185a",
+    "compressedSize": 3869187,
+    "speakers": [
+      {
+        "speaker": "nep",
+        "name": "Google \u0928\u0947\u092a\u093e\u0932\u0940 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "ne-np-x-multi"
+  },
+  {
+    "id": "el-gr-x-multi-seanet",
+    "fileId": "el-gr-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/el-gr/el-gr-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "52326e055a44241844bf7339c581d3acbf0a2a6e1f8eb47df513199f3f47611a",
+    "compressedSize": 5213394,
+    "speakers": [
+      {
+        "speaker": "vfz",
+        "name": "Google \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "el-gr-x-multi"
+  },
+  {
+    "id": "fil-ph-x-multi-seanet",
+    "fileId": "fil-ph-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/fil-ph/fil-ph-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "74e4f37e34e7ae3fa2ee49045619acc4ed2b8edfa734060b3f82febeafb09689",
+    "compressedSize": 3701976,
+    "speakers": [
+      {
+        "speaker": "cfc",
+        "name": "Google Filipino 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "fic",
+        "name": "Google Filipino 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "fid",
+        "name": "Google Filipino 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "fie",
+        "name": "Google Filipino 4 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "fil-ph-x-multi"
+  },
+  {
+    "id": "sk-sk-x-multi-seanet",
+    "fileId": "sk-sk-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/sk-sk/sk-sk-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "60aef84baec5e2cd34b3c58a8672e3af349a1f5631bde8b9724c13684473cc02",
+    "compressedSize": 5234469,
+    "speakers": [
+      {
+        "speaker": "sfk",
+        "name": "Google Sloven\u010dina (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "sk-sk-x-multi"
+  },
+  {
+    "id": "pl-pl-x-multi-seanet",
+    "fileId": "pl-pl-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/pl-pl/pl-pl-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "87576cb684550fd25a04c5e69b3c814d34f3eb40d594327b1db13013dfb2e2b1",
+    "compressedSize": 3882558,
+    "speakers": [
+      {
+        "speaker": "oda",
+        "name": "Google Polski 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "afb",
+        "name": "Google Polski 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "bmg",
+        "name": "Google Polski 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "jmk",
+        "name": "Google Polski 4 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "zfg",
+        "name": "Google Polski 5 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "pl-pl-x-multi"
+  },
+  {
+    "id": "uk-ua-x-multi-seanet",
+    "fileId": "uk-ua-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/uk-ua/uk-ua-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "300df46376b00897f0c4406a49c0cacb1eee68e006b3660f8f79525a77fe6db2",
+    "compressedSize": 3646696,
+    "speakers": [
+      {
+        "speaker": "hfd",
+        "name": "Google \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "uk-ua-x-multi"
+  },
+  {
+    "id": "nl-nl-x-multi-seanet",
+    "fileId": "nl-nl-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/nl-nl/nl-nl-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "fac3df039c8eb080c56ec78112577c38bd01f517022982afbd93821950fcf215",
+    "compressedSize": 3713175,
+    "speakers": [
+      {
+        "speaker": "tfb",
+        "name": "Google Nederlands 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "bmh",
+        "name": "Google Nederlands 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "dma",
+        "name": "Google Nederlands 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "lfc",
+        "name": "Google Nederlands 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "yfr",
+        "name": "Google Nederlands 5 (Natural)",
+        "gender": "female"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "nl-nl-x-multi"
+  },
+  {
+    "id": "ja-jp-x-multi-seanet",
+    "fileId": "ja-jp-x-multi-seanet-r60",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/ja-jp/ja-jp-x-multi-seanet-r60.zvoice",
+    "sha256Checksum": "86354670c74f83b3f94a8ecb978043fe358ad7474da1457682ad8a780728f453",
+    "compressedSize": 32276382,
+    "speakers": [
+      {
+        "speaker": "jab",
+        "name": "Google \u65e5\u672c\u8a9e 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "jac",
+        "name": "Google \u65e5\u672c\u8a9e 2 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "jad",
+        "name": "Google \u65e5\u672c\u8a9e 3 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "ja-jp-x-multi"
+  },
+  {
+    "id": "vi-vn-x-multi-seanet",
+    "fileId": "vi-vn-x-multi-seanet-r58",
+    "url": "https://redirector.gvt1.com/edgedl/android/tts/v26/vi-vn/vi-vn-x-multi-seanet-r58.zvoice",
+    "sha256Checksum": "0e83d9cf9d5e8178a47ecff3d3ba2c250b6ed117f8e4da13a1f81ad695607c03",
+    "compressedSize": 3769549,
+    "speakers": [
+      {
+        "speaker": "gft",
+        "name": "Google Ti\u1ebfng Vi\u1ec7t 1 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "vic",
+        "name": "Google Ti\u1ebfng Vi\u1ec7t 2 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "vid",
+        "name": "Google Ti\u1ebfng Vi\u1ec7t 3 (Natural)",
+        "gender": "male"
+      },
+      {
+        "speaker": "vie",
+        "name": "Google Ti\u1ebfng Vi\u1ec7t 4 (Natural)",
+        "gender": "female"
+      },
+      {
+        "speaker": "vif",
+        "name": "Google Ti\u1ebfng Vi\u1ec7t 5 (Natural)",
+        "gender": "male"
+      }
+    ],
+    "remote": true,
+    "dependentVoiceId": "vi-vn-x-multi"
+  }
+]

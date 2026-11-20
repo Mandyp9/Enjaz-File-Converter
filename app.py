@@ -9,7 +9,7 @@ Run this file to start the converter. It does everything in this order:
         b. Convert it to CSV
         c. Archive both TXT and CSV to data_archive/
         d. Keep working copies of both in output/
-        e. Open Edge + WhatsApp Web (once, kept open for the whole run)
+        e. Open Chrome + WhatsApp Web (once, kept open for the whole run)
         f. Send the raw TXT file first, then the CSV (two separate
            messages) to your group
     3. Duplicates (same file dropped again, or same content in a new file)
@@ -69,8 +69,8 @@ def setup_folders() -> None:
 # ---------------------------------------------------------------------------
 # Since app.py now keeps WhatsApp Web open for the whole run (see
 # watch_and_process), rerunning START.bat without closing the previous
-# window first launches a SECOND app.py that tries to open Edge against
-# the same edge_profile/ folder at the same time. Edge won't allow
+# window first launches a SECOND app.py that tries to open Chrome against
+# the same chrome_profile/ folder at the same time. Chrome won't allow
 # two processes to share one profile, so the second instance's WhatsApp
 # Web fails to open — which shows up as a confusing "WhatsApp not
 # available" error instead of the real cause. This lock catches that at
@@ -109,25 +109,25 @@ def release_single_instance_lock() -> None:
         pass
 
 
-def cleanup_orphaned_edge() -> None:
-    """Close out any Edge window still holding edge_profile/ open from
+def cleanup_orphaned_chrome() -> None:
+    """Close out any Chrome window still holding chrome_profile/ open from
     a previous run whose app.py process is no longer alive.
 
     This happens if the app.py terminal window gets closed (or killed)
-    without a clean Ctrl+C — the Python process dies, but its Edge
-    child can survive as an orphan and keeps edge_profile/ locked.
+    without a clean Ctrl+C — the Python process dies, but its Chrome
+    child can survive as an orphan and keeps chrome_profile/ locked.
     Since acquire_single_instance_lock() already confirmed no legitimate
-    app.py owns that Edge window, it's safe to close it and clear
-    Edge's own lock files so a fresh session can open the same
+    app.py owns that Chrome window, it's safe to close it and clear
+    Chrome's own lock files so a fresh session can open the same
     profile cleanly.
     """
-    profile_dir = str(whatsapp_sender.EDGE_PROFILE_DIR)
+    profile_dir = str(whatsapp_sender.CHROME_PROFILE_DIR)
     killed_any = False
 
     for proc in psutil.process_iter(["pid", "name", "cmdline"]):
         try:
             name = (proc.info["name"] or "").lower()
-            if "msedge" not in name:
+            if "chrome" not in name:
                 continue
             cmdline = " ".join(proc.info["cmdline"] or [])
             if profile_dir in cmdline:
@@ -138,15 +138,15 @@ def cleanup_orphaned_edge() -> None:
 
     if killed_any:
         logging.info(
-            "Closed a leftover Edge/WhatsApp window from a previous "
+            "Closed a leftover Chrome/WhatsApp window from a previous "
             "run so a fresh session can open cleanly."
         )
-        time.sleep(2)  # give Edge a moment to actually release its lock files
+        time.sleep(2)  # give Chrome a moment to actually release its lock files
 
-    # Edge's own lock files — these are what actually block a new
-    # Edge from opening the profile, even after the old process is gone.
+    # Chrome's own lock files — these are what actually block a new
+    # Chrome from opening the profile, even after the old process is gone.
     for lock_name in ("SingletonLock", "SingletonCookie", "SingletonSocket"):
-        lock_path = whatsapp_sender.EDGE_PROFILE_DIR / lock_name
+        lock_path = whatsapp_sender.CHROME_PROFILE_DIR / lock_name
         try:
             if lock_path.exists() or lock_path.is_symlink():
                 lock_path.unlink()
@@ -358,24 +358,29 @@ def send_pending_files(session: whatsapp_sender.WhatsAppSession) -> None:
 
         # Send TXT first, if present.
         if txt_path is not None:
+            logging.info("========== TXT SEND START: %s ==========", txt_path.name)
+
             if session.send(txt_path):
+                logging.info("========== TXT SEND SUCCESS: %s ==========", txt_path.name)
                 try:
                     txt_path.unlink()
                 except OSError:
                     logging.exception("Could not remove %s from output/", txt_path.name)
             else:
-                logging.warning("%s not sent — will retry next cycle.", txt_path.name)
+                logging.warning("========== TXT SEND FAILED: %s ==========", txt_path.name)
 
         # Then send CSV, if present.
         if csv_path is not None:
+            logging.info("========== CSV SEND START: %s ==========", csv_path.name)
+
             if session.send(csv_path):
+                logging.info("========== CSV SEND SUCCESS: %s ==========", csv_path.name)
                 try:
                     csv_path.unlink()
                 except OSError:
                     logging.exception("Could not remove %s from output/", csv_path.name)
             else:
-                logging.warning("%s not sent — will retry next cycle.", csv_path.name)
-
+                logging.warning("========== CSV SEND FAILED: %s ==========", csv_path.name)
 
 # ---------------------------------------------------------------------------
 # MAIN WATCH LOOP
@@ -406,7 +411,7 @@ def watch_and_process() -> None:
     # Open WhatsApp Web once, right away, and keep it open for the whole
     # run — rather than opening/closing it around each send. Repeatedly
     # closing and reopening was what forced a fresh QR-code scan each
-    # time; leaving the persistent edge_profile/ session open
+    # time; leaving the persistent chrome_profile/ session open
     # continuously avoids that. If this fails (e.g. WhatsApp momentarily
     # unavailable), send_pending_alerts()/send_pending_files() still try
     # to open it lazily on their own the next time there's something to
@@ -447,20 +452,20 @@ def watch_and_process() -> None:
                 save_processed_hashes(processed_hashes)
 
             # Send any operational alerts queued by scheduler.py/downloader.py
-            # (LAN down, portal down, no file found, etc.)
+            logging.info("========== ALERT PROCESS START ==========")
             send_pending_alerts(session)
+            logging.info("========== ALERT PROCESS END ==========")
 
             # Send everything waiting in output/ (new + retry failures).
+            logging.info("========== FILE PROCESS START ==========")
             send_pending_files(session)
-
-            # WhatsApp Web is kept open for the whole run (see startup
-            # above) rather than being closed here when idle, so it
-            # doesn't need to be re-logged-in (QR scan) every cycle.
+            logging.info("========== FILE PROCESS END ==========")
 
             time.sleep(config.WATCH_INTERVAL_SECONDS)
 
     finally:
         session.close()
+        
 
 
 # ---------------------------------------------------------------------------
@@ -482,7 +487,7 @@ if __name__ == "__main__":
         )
         sys.exit(1)
 
-    cleanup_orphaned_edge()
+    cleanup_orphaned_chrome()
 
     try:
         watch_and_process()

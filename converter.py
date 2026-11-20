@@ -465,6 +465,7 @@ def transform_record(fields: dict, bank_mapping: dict, exchange_rate_value: Deci
     beneficiary_bank_name = fields["beneficiary_bank"]
     account_no = fields["beneficiary_account_no"]
     address = fields["beneficiary_address"]
+    original_address = address  # kept intact for the CSV output — see below
     amount = fields["transaction_amount"]
     remittance_option = fields["remittance_option"]
 
@@ -491,6 +492,18 @@ def transform_record(fields: dict, bank_mapping: dict, exchange_rate_value: Deci
             address, extracted_bank = extract_bank_from_address(address)
             if extracted_bank:
                 beneficiary_bank_name = extracted_bank
+            else:
+                # No phrase containing the word "BANK" was found — but the
+                # whole address might just BE a bank's short/informal name
+                # with no "BANK" suffix at all (e.g. "GLOBAL IME" instead
+                # of "GLOBAL IME BANK LTD"). Try matching it directly
+                # against bank_mapping.json before giving up; only accept
+                # this if it actually resolves to a known bank, so an
+                # address that's genuinely unrelated text is left alone.
+                candidate_code, candidate_name = lookup_bank(bank_mapping, address)
+                if candidate_code:
+                    beneficiary_bank_name = candidate_name
+                    address = ""
 
         # Rule: pull a numeric account/wallet number out of the address if
         # the account number isn't already given.
@@ -567,7 +580,7 @@ def transform_record(fields: dict, bank_mapping: dict, exchange_rate_value: Deci
         "RemitterIDExpireDate": "",
         "RemitterDOB": "",
         "BeneficiaryName": normalize_spaces(fields["beneficiary_name"]),
-        "BeneficiaryAddress": address,
+        "BeneficiaryAddress": normalize_spaces(original_address),
         "BeneficiaryCity": "",
         "BeneficiaryContact": fields["beneficiary_phone_no"],
         "BeneficiaryIDType": "",

@@ -2,18 +2,18 @@
 WHATSAPP_SENDER.PY
 ==================
 Sends a CSV file to a WhatsApp group as a document attachment using
-WhatsApp Web automated through Selenium + Microsoft Edge.
+WhatsApp Web automated through Selenium + Chrome.
 
 HOW THIS WORKS:
-    - An Edge window opens showing WhatsApp Web.
+    - A Chrome window opens showing WhatsApp Web.
     - The FIRST time, scan the QR code with your phone
       (WhatsApp > Settings > Linked Devices > Link a Device).
-    - After that the login is saved in edge_profile/ and you won't
+    - After that the login is saved in chrome_profile/ and you won't
       need to scan again.
 
 SETUP:
     pip install selenium pyautogui
-    Microsoft Edge must be installed (comes preinstalled on Windows).
+    Google Chrome must be installed.
 """
 
 import logging
@@ -27,15 +27,21 @@ logger = logging.getLogger(__name__)
 try:
     from selenium import webdriver
     from selenium.webdriver.common.by import By
+    from selenium.common.exceptions import (
+        ElementNotInteractableException,
+        ElementClickInterceptedException,
+        StaleElementReferenceException,
+    )
     from selenium.webdriver.common.keys import Keys
+    from selenium.webdriver.common.action_chains import ActionChains
     from selenium.webdriver.support.ui import WebDriverWait
     from selenium.webdriver.support import expected_conditions as EC
     _SELENIUM_AVAILABLE = True
 except ImportError:
     _SELENIUM_AVAILABLE = False
 
-# Saved Edge login profile so you only scan the QR code once.
-EDGE_PROFILE_DIR = config.BASE_DIR / "edge_profile"
+# Saved Chrome login profile so you only scan the QR code once.
+CHROME_PROFILE_DIR = config.BASE_DIR / "chrome_profile"
 
 # Max seconds to wait for any single element to appear.
 ELEMENT_WAIT_SECONDS = 30
@@ -55,7 +61,11 @@ INITIAL_LOAD_WAIT_SECONDS = 60
 # TXT then CSV could take ~30s+ per file when bubble/tick detection
 # didn't resolve quickly; 12s is plenty of headroom while keeping the
 # total gap between files in the 10-15s range that's actually needed.
-SEND_CONFIRM_WAIT_SECONDS = 12
+SEND_CONFIRM_WAIT_SECONDS = 25  # was 12 — too short to reliably catch a
+# failed-send indicator on a slow/flaky connection; WhatsApp Web can take
+# well over 12s to actually flag an upload as failed, and once that
+# window closed the code fell back to "assume it sent" and deleted the
+# file from output/, silently losing track of genuinely failed sends.
 
 # Selector for outgoing message bubbles. WhatsApp Web's own message model
 # tags each bubble's container with data-id="true_..." for messages sent
@@ -74,18 +84,18 @@ OUTGOING_BUBBLE_XPATH = (
 # ---------------------------------------------------------------------------
 
 def _create_browser():
-    """Open Microsoft Edge. Returns a webdriver instance, or None on failure."""
-    # Remove stale SingletonLock so Edge can start even after a crash.
-    singleton_lock = EDGE_PROFILE_DIR / "SingletonLock"
+    """Open Chrome. Returns a webdriver instance, or None on failure."""
+    # Remove stale SingletonLock so Chrome can start even after a crash.
+    singleton_lock = CHROME_PROFILE_DIR / "SingletonLock"
     if singleton_lock.exists():
         try:
             singleton_lock.unlink()
-            logger.info("Removed stale Edge SingletonLock.")
+            logger.info("Removed stale Chrome SingletonLock.")
         except OSError:
             pass
 
-    options = webdriver.EdgeOptions()
-    options.add_argument(f"--user-data-dir={EDGE_PROFILE_DIR}")
+    options = webdriver.ChromeOptions()
+    options.add_argument(f"--user-data-dir={CHROME_PROFILE_DIR}")
     options.add_argument("--profile-directory=Default")
     options.add_argument("--window-size=1200,900")
     options.add_argument("--no-first-run")
@@ -93,9 +103,9 @@ def _create_browser():
     options.add_argument("--disable-extensions")
 
     try:
-        driver = webdriver.Edge(options=options)
+        driver = webdriver.Chrome(options=options)
     except Exception:
-        logger.exception("Could not start Edge. Is Microsoft Edge installed?")
+        logger.exception("Could not start Chrome. Is Google Chrome installed?")
         return None
 
     driver.get("https://web.whatsapp.com")
@@ -105,7 +115,7 @@ def _create_browser():
 def _browser_is_alive(driver) -> bool:
     """Check whether an existing driver's browser window/session is still
     usable, so we can reuse it instead of always spawning a brand new
-    Edge process (which is what was causing "browser restarts between
+    Chrome process (which is what was causing "browser restarts between
     every file" — see WhatsAppSession.start())."""
     if driver is None:
         return False
@@ -129,6 +139,91 @@ def _find_element_any(driver, wait_seconds, xpaths, description):
             continue
     logger.error("Could not find: %s", description)
     return None
+
+
+def _click_element_resilient(driver, xpaths, description, timeout=5, retries=4):
+    """Reliably click a WhatsApp Web element.
+
+    WhatsApp Web frequently renders controls before they are actually
+    interactable. This helper re-finds the element for every attempt, waits
+    for it to be visible/enabled, scrolls it into view, and retries common
+    Selenium click failures. A JavaScript click is used only as a final
+    fallback.
+    """
+    last_error = None
+
+    for attempt in range(1, retries + 1):
+        for xpath in xpaths:
+            try:
+                element = WebDriverWait(driver, timeout).until(
+                    EC.presence_of_element_located((By.XPATH, xpath))
+                )
+
+                WebDriverWait(driver, timeout).until(
+                    lambda d: element.is_displayed() and element.is_enabled()
+                )
+
+                driver.execute_script(
+                    "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+                    element,
+                )
+                time.sleep(0.2)
+
+                element.click()
+                logger.debug(
+                    "Clicked %s successfully on attempt %d.",
+                    description,
+                    attempt,
+                )
+                return True
+
+            except (
+                ElementNotInteractableException,
+                ElementClickInterceptedException,
+                StaleElementReferenceException,
+            ) as exc:
+                last_error = exc
+                logger.debug(
+                    "Could not click %s using selector %s on attempt %d/%d: %s",
+                    description, xpath, attempt, retries, type(exc).__name__,
+                )
+                time.sleep(0.4)
+
+            except Exception as exc:
+                last_error = exc
+                logger.debug(
+                    "Unexpected error clicking %s using selector %s: %s",
+                    description, xpath, exc,
+                )
+                time.sleep(0.3)
+
+        time.sleep(0.5)
+
+    # Final fallback: re-find the element and click it through JavaScript.
+    for xpath in xpaths:
+        try:
+            element = WebDriverWait(driver, timeout).until(
+                EC.presence_of_element_located((By.XPATH, xpath))
+            )
+            WebDriverWait(driver, timeout).until(
+                lambda d: element.is_displayed() and element.is_enabled()
+            )
+            driver.execute_script(
+                "arguments[0].scrollIntoView({block: 'center', inline: 'center'});",
+                element,
+            )
+            time.sleep(0.3)
+            driver.execute_script("arguments[0].click();", element)
+            logger.warning("Clicked %s using JavaScript fallback.", description)
+            return True
+        except Exception as exc:
+            last_error = exc
+
+    logger.error(
+        "Could not click %s after %d attempts. Last error: %s",
+        description, retries, last_error,
+    )
+    return False
 
 
 def _wait_for_whatsapp_loaded(driver) -> bool:
@@ -188,7 +283,19 @@ def _open_group_chat(driver, group_name: str) -> bool:
             )
             return False
 
-        result.click()
+        if not _click_element_resilient(
+            driver,
+            [
+                f'//span[@title="{group_name}"]',
+                f'//span[contains(@title, "{group_name}")]',
+                f'//span[contains(text(), "{group_name}")]',
+            ],
+            f"group '{group_name}'",
+            timeout=3,
+            retries=3,
+        ):
+            return False
+
         time.sleep(1)
 
         try:
@@ -231,7 +338,10 @@ def _dismiss_discard_popup(driver) -> bool:
                 btn = WebDriverWait(driver, 1).until(
                     EC.element_to_be_clickable((By.XPATH, xpath))
                 )
-                btn.click()
+                if not _click_element_resilient(
+                    driver, [xpath], "discard/cancel popup", timeout=1, retries=2
+                ):
+                    continue
                 logger.info("Dismissed discard/cancel popup.")
                 time.sleep(0.5)
                 return True
@@ -249,7 +359,137 @@ def _outgoing_message_count(driver) -> int:
         return len(driver.find_elements(By.XPATH, OUTGOING_BUBBLE_XPATH))
     except Exception:
         return -1
+def _preview_is_open(caption_box) -> bool:
+    """True while the attachment preview (caption box) is still on screen.
+    Once Send really goes through, WhatsApp removes the preview, so the
+    element goes stale / hidden."""
+    try:
+        return caption_box.is_displayed()
+    except StaleElementReferenceException:
+        return False
+    except Exception:
+        return True
 
+
+def _wait_preview_closed(caption_box, seconds: float = 3.0) -> bool:
+    end = time.time() + seconds
+    while time.time() < end:
+        if not _preview_is_open(caption_box):
+            return True
+        time.sleep(0.25)
+    return False
+
+
+def _log_send_button_debug(driver) -> None:
+    """Dump what the Send control looks like right now, so a changed
+    WhatsApp Web layout can be fixed from the log instead of guessing."""
+    try:
+        html = driver.execute_script(
+            "return Array.from(document.querySelectorAll("
+            "'[data-icon*=\"send\"], [aria-label*=\"Send\"], [data-testid*=\"send\"]'))"
+            ".map(e => e.outerHTML.slice(0, 300) + '  <-- parent: ' + "
+            "(e.parentElement ? e.parentElement.outerHTML.slice(0, 200) : ''))"
+            ".join('\\n');"
+        )
+        logger.warning("Send-button candidates on page:\n%s", html or "(none found)")
+    except Exception:
+        logger.exception("Could not collect Send-button debug info.")
+
+
+def _click_send_in_preview(driver, caption_box, send_xpaths) -> bool:
+    """Click Send using a short, shared timeout and verify preview closure."""
+
+    # 1. Find the first visible and enabled Send element.
+    # The timeout applies to the entire selector list, not each XPath.
+    try:
+        def find_send_button(d):
+            for xpath in send_xpaths:
+                elements = d.find_elements(By.XPATH, xpath)
+                for element in elements:
+                    try:
+                        if element.is_displayed() and element.is_enabled():
+                            return element
+                    except StaleElementReferenceException:
+                        continue
+            return False
+
+        send_button = WebDriverWait(
+            driver, 3, poll_frequency=0.2
+        ).until(find_send_button)
+
+        # Try normal Selenium click first.
+        try:
+            send_button.click()
+            logger.info("Clicked Send button using Selenium.")
+        except Exception as exc:
+            logger.warning(
+                "Normal Send click failed (%s). Trying JavaScript.",
+                type(exc).__name__
+            )
+            driver.execute_script(
+                "arguments[0].click();", send_button
+            )
+
+        if _wait_preview_closed(caption_box, 3):
+            return True
+
+    except Exception as exc:
+        logger.warning(
+            "Could not locate/click Send button using primary method: %s",
+            type(exc).__name__
+        )
+
+    # 2. Try clicking the clickable ancestor of the Send icon.
+    ancestor_xpaths = [
+        '//span[@data-icon="wds-ic-send-filled"]/ancestor::*[self::button or @role="button"][1]',
+        '//span[@data-testid="wds-ic-send-filled"]/ancestor::*[self::button or @role="button"][1]',
+        '//*[@aria-label="Send"]',
+    ]
+
+    for xpath in ancestor_xpaths:
+        try:
+            elements = driver.find_elements(By.XPATH, xpath)
+            for element in elements:
+                if element.is_displayed() and element.is_enabled():
+                    driver.execute_script(
+                        "arguments[0].click();", element
+                    )
+
+                    if _wait_preview_closed(caption_box, 2):
+                        logger.info("Send successful using ancestor fallback.")
+                        return True
+        except Exception:
+            continue
+
+    # 3. Try a real mouse click on the Send icon.
+    for xpath in send_xpaths:
+        try:
+            elements = driver.find_elements(By.XPATH, xpath)
+            for element in elements:
+                if element.is_displayed():
+                    ActionChains(driver).move_to_element(
+                        element
+                    ).click().perform()
+
+                    if _wait_preview_closed(caption_box, 2):
+                        logger.info("Send successful using mouse fallback.")
+                        return True
+        except Exception:
+            continue
+
+    # 4. Final fallback: press Enter in the caption box.
+    try:
+        caption_box.send_keys(Keys.ENTER)
+
+        if _wait_preview_closed(caption_box, 3):
+            logger.info("Send successful using Enter fallback.")
+            return True
+    except Exception:
+        pass
+
+    _log_send_button_debug(driver)
+    logger.error("All Send button methods failed; preview is still open.")
+    return False
 
 def _wait_for_send_confirmed(driver, count_before: int, timeout: int) -> bool:
     """After clicking Send, wait for the new outgoing message bubble to
@@ -368,25 +608,36 @@ def _attach_and_send_document(driver, file_path: Path, caption: str) -> bool:
         count_before = _outgoing_message_count(driver)
 
         # 1. Click the Attach button.
-        attach_button = _find_element_any(driver, SHORT_ELEMENT_WAIT_SECONDS, [
+        attach_xpaths = [
             '//button[@aria-label="Attach"]',
             '//button[@data-tab="10"][@aria-label="Attach"]',
-        ], "Attach button")
+        ]
 
-        if attach_button is None:
+        if not _click_element_resilient(
+            driver,
+            attach_xpaths,
+            "Attach button",
+            timeout=5,
+            retries=4,
+        ):
             return False
 
-        attach_button.click()
         time.sleep(0.5)
 
         # 2. Click "Document" in the attach menu.
-        doc_menu_item = _find_element_any(driver, SHORT_ELEMENT_WAIT_SECONDS, [
+        document_xpaths = [
             '//button[@aria-label="Document"]',
             '//button[@role="menuitem"][@aria-label="Document"]',
             '//span[text()="Document"]/ancestor::button[1]',
-        ], "Document menu item")
+        ]
 
-        if doc_menu_item is None:
+        if not _click_element_resilient(
+            driver,
+            document_xpaths,
+            "Document menu item",
+            timeout=5,
+            retries=4,
+        ):
             return False
 
         # Block the OS file picker BEFORE clicking Document.
@@ -400,7 +651,6 @@ def _attach_and_send_document(driver, file_path: Path, caption: str) -> bool:
             }, true);
         """)
 
-        doc_menu_item.click()
         time.sleep(0.8)
 
         # 3. Find the document file input and set the file.
@@ -459,28 +709,18 @@ def _attach_and_send_document(driver, file_path: Path, caption: str) -> bool:
             time.sleep(0.3)
 
         # 6. Click Send.
-        send_button = None
-        for xpath in [
+        send_xpaths = [
             '//span[@data-icon="wds-ic-send-filled"]',
             '//span[@data-testid="wds-ic-send-filled"]',
             '//div[@aria-label="Send"]',
             '//button[@aria-label="Send"]',
             '//div[@role="button"][@aria-label="Send"]',
             '//div[@data-testid="send"]',
-        ]:
-            try:
-                send_button = WebDriverWait(driver, 1.0).until(
-                    EC.element_to_be_clickable((By.XPATH, xpath))
-                )
-                break
-            except Exception:
-                continue
+        ]
 
-        if send_button is None:
-            logger.error("Send button not found.")
+        if not _click_send_in_preview(driver, caption_box, send_xpaths):
+            logger.error("Send was clicked but the file preview never closed - not sent.")
             return False
-
-        send_button.click()
 
         # Wait for the preview screen to close (returns to normal compose
         # box) — this alone is NOT proof of a successful send, it just
@@ -516,7 +756,7 @@ def _attach_and_send_document(driver, file_path: Path, caption: str) -> bool:
 # ---------------------------------------------------------------------------
 
 class WhatsAppSession:
-    """Keeps one Edge + WhatsApp Web session open across multiple sends.
+    """Keeps one Chrome + WhatsApp Web session open across multiple sends.
 
     Usage in app.py:
         session = WhatsAppSession()
@@ -535,8 +775,8 @@ class WhatsAppSession:
         return self.driver is not None and self._group_open
 
     def start(self) -> bool:
-        """Open Edge, load WhatsApp Web, open the group.
-        Waits 15 seconds between failed attempts to avoid Edge spam.
+        """Open Chrome, load WhatsApp Web, open the group.
+        Waits 15 seconds between failed attempts to avoid Chrome spam.
         Returns True if ready to send."""
         if not _SELENIUM_AVAILABLE:
             logger.error("selenium not installed. Run: pip install selenium")
@@ -552,7 +792,7 @@ class WhatsAppSession:
         # is_ready() was False — which includes right after a single
         # failed send (send() sets _group_open = False to force a
         # re-open). That meant EVERY send failure spawned a brand new
-        # Edge window (via the SingletonLock removal hack killing the
+        # Chrome window (via the SingletonLock removal hack killing the
         # old process), i.e. "the browser restarts between files" — when
         # really all that was needed was to re-open the group chat in
         # the browser that was already open.
@@ -566,7 +806,7 @@ class WhatsAppSession:
                 self._last_failed_at = time.time()
                 return False
             else:
-                logger.warning("Existing browser session is no longer usable — restarting Edge.")
+                logger.warning("Existing browser session is no longer usable — restarting Chrome.")
                 try:
                     self.driver.quit()
                 except Exception:
@@ -669,15 +909,19 @@ class WhatsAppSession:
             # popup instead of submitting the message, leaving the text
             # sitting in the box typed but never actually sent. Clicking
             # the real button sidesteps that ambiguity entirely.
-            send_button = _find_element_any(self.driver, SHORT_ELEMENT_WAIT_SECONDS, [
+            send_xpaths = [
                 '//button[@aria-label="Send"]',
                 '//span[@data-icon="wds-ic-send-filled" or @data-icon="send"]/ancestor::button',
-            ], "send button")
+            ]
 
-            if send_button is not None:
-                send_button.click()
-            else:
-                # Fall back to Enter only if the button truly can't be found.
+            if not _click_element_resilient(
+                self.driver,
+                send_xpaths,
+                "alert Send button",
+                timeout=5,
+                retries=4,
+            ):
+                # Fall back to Enter only if the button truly cannot be clicked.
                 compose_box.send_keys(Keys.ENTER)
 
             # Verify it actually went out instead of trusting the click —

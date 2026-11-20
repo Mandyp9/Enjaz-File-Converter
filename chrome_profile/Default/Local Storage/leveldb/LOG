@@ -1,3 +1,39 @@
-2026/08/18-12:04:04.525 4f6c Reusing MANIFEST D:\Enjaz file converter Live\chrome_profile\Default\Local Storage\leveldb/MANIFEST-000001
-2026/08/18-12:04:04.532 4f6c Recovering log #69
-2026/08/18-12:04:04.535 4f6c Reusing old log D:\Enjaz file converter Live\chrome_profile\Default\Local Storage\leveldb/000069.log 
+2026/11/18-15:55:36.070 1cec Reusing MANIFEST C:\Users\Roman Chauhan\Documents\Enjaz-File-Converter\chrome_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/11/18-15:55:36.082 1cec Recovering log #11
+2026/11/18-15:55:36.088 1cec Reusing old log C:\Users\Roman Chauhan\Documents\Enjaz-File-Converter\chrome_profile\Default\Local Storage\leveldb/000011.log 
+2026/11/18-16:55:48.009 1d50 Level-0 table #15: started
+2026/11/18-16:55:48.054 1d50 Level-0 table #15: 15251 bytes OK
+2026/11/18-16:55:48.063 1d50 Delete type=0 #11
+2026/11/18-19:16:44.999 1d50 Level-0 table #17: started
+2026/11/18-19:16:45.022 1d50 Level-0 table #17: 12619 bytes OK
+2026/11/18-19:16:45.026 1d50 Delete type=0 #14
+2026/11/18-19:16:45.027 1d50 Compacting 4@0 + 1@1 files
+2026/11/18-19:16:45.039 1d50 Generated table #18@0: 70 keys, 5346 bytes
+2026/11/18-19:16:45.039 1d50 Compacted 4@0 + 1@1 files => 5346 bytes
+2026/11/18-19:16:45.040 1d50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/18-19:16:45.043 1d50 Delete type=2 #8
+2026/11/18-19:16:45.043 1d50 Delete type=2 #10
+2026/11/18-19:16:45.043 1d50 Delete type=2 #12
+2026/11/18-19:16:45.043 1d50 Delete type=2 #15
+2026/11/18-19:16:45.044 1d50 Delete type=2 #17
+2026/11/19-07:56:47.650 1d50 Level-0 table #20: started
+2026/11/19-07:56:47.680 1d50 Level-0 table #20: 13090 bytes OK
+2026/11/19-07:56:47.686 1d50 Delete type=0 #16
+2026/11/19-13:34:59.370 1d50 Level-0 table #22: started
+2026/11/19-13:34:59.393 1d50 Level-0 table #22: 14118 bytes OK
+2026/11/19-13:34:59.397 1d50 Delete type=0 #19
+2026/11/19-16:16:54.163 1d50 Level-0 table #24: started
+2026/11/19-16:16:54.185 1d50 Level-0 table #24: 13436 bytes OK
+2026/11/19-16:16:54.190 1d50 Delete type=0 #21
+2026/11/19-19:47:30.886 1d50 Level-0 table #26: started
+2026/11/19-19:47:30.913 1d50 Level-0 table #26: 13731 bytes OK
+2026/11/19-19:47:30.918 1d50 Delete type=0 #23
+2026/11/19-19:47:30.920 1d50 Compacting 4@0 + 1@1 files
+2026/11/19-19:47:30.934 1d50 Generated table #27@0: 70 keys, 4481 bytes
+2026/11/19-19:47:30.935 1d50 Compacted 4@0 + 1@1 files => 4481 bytes
+2026/11/19-19:47:30.936 1d50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/19-19:47:30.939 1d50 Delete type=2 #18
+2026/11/19-19:47:30.939 1d50 Delete type=2 #20
+2026/11/19-19:47:30.940 1d50 Delete type=2 #22
+2026/11/19-19:47:30.940 1d50 Delete type=2 #24
+2026/11/19-19:47:30.940 1d50 Delete type=2 #26

@@ -20,7 +20,7 @@ last_seq+1, last_seq+2, ... directly via URL until we hit a 404 /
 import json
 import logging
 import time
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import requests
@@ -597,10 +597,11 @@ def _check_lan_status_and_alert() -> bool:
 
     if status["ip_matches_expected"] is False:
         _lan_ok = False
-        logger.warning("LAN IP is %s, expected %s.", status["lan_ip"], config.EXPECTED_LAN_IP)
+        expected_str = " / ".join(config.EXPECTED_LAN_IP)
+        logger.warning("LAN IP is %s, expected one of: %s.", status["lan_ip"], expected_str)
         alerts.queue_alert(
             "lan_ip_mismatch",
-            f"⚠️ LAN IP is {status['lan_ip']}, but {config.EXPECTED_LAN_IP} "
+            f"⚠️ LAN IP is {status['lan_ip']}, but one of ({expected_str}) "
             f"was expected. The Bank Albilad portal may not open correctly "
             f"from this connection."
         )
@@ -662,7 +663,22 @@ def check_and_download():
         logger.info("Skipping portal check — LAN is down right now.")
         return None
 
-    today_str = date.today().strftime("%Y%m%d")
+    now = datetime.now()
+    if now.hour < config.EARLY_MORNING_CUTOFF_HOUR:
+        # Early-morning slot (e.g. 01:46) — this is really the tail end
+        # of the PREVIOUS calendar day's overnight file batch, not a new
+        # day starting fresh. Continue yesterday's date_str/sequence
+        # instead of resetting to <today>/00001.
+        effective_date = now.date() - timedelta(days=1)
+        logger.info(
+            "Before %02d:00 — treating this as a continuation of %s's "
+            "file batch, not a new day.",
+            config.EARLY_MORNING_CUTOFF_HOUR, effective_date.strftime("%Y%m%d")
+        )
+    else:
+        effective_date = now.date()
+
+    today_str = effective_date.strftime("%Y%m%d")
     state = _load_state()
     have_state_for_today = today_str in state
     start_seq = state.get(today_str, 0) + 1

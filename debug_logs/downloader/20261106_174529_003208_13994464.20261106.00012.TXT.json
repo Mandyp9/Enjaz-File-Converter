@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-11-06T17:45:29.003317",
+  "filename": "13994464.20261106.00012.TXT",
+  "reason": "empty_body_200",
+  "status_code": 200,
+  "headers": {
+    "X-SharePointHealthScore": "0",
+    "Server": "WEB SERVER",
+    "request-id": "822e4ca2-60ca-a0d5-1ac9-eeb4e6ac05cc",
+    "SPIisLatency": "0",
+    "Cache-Control": "private,max-age=0",
+    "ResourceTag": "rt:61B4017E-0527-4955-A7A8-C5F9B30A6934@00000000001",
+    "Content-Type": "text/plain",
+    "X-MS-InvokeApp": "1; RequireReadOnly",
+    "Content-Security-Policy": "frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.teams.microsoft.us local.teams.office.com *.powerapps.com *.yammer.com *.officeapps.live.com *.office.com *.stream.azure-test.net *.microsoftstream.com *.dynamics.com *.microsoft.com onedrive.live.com *.onedrive.live.com;",
+    "Date": "Fri, 06 Nov 2026 12:00:29 GMT",
+    "SPRequestDuration": "20",
+    "Expires": "Thu, 22 Oct 2026 12:00:29 GMT",
+    "Accept-Ranges": "bytes",
+    "ETag": "\"{61B4017E-0527-4955-A7A8-C5F9B30A6934},1\"",
+    "X-Content-Type-Options": "nosniff",
+    "Public-Extension": "http://schemas.microsoft.com/repl-2",
+    "Set-Cookie": "FedAuth=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+MCMuZnxyZW1pdHRhbmNlYWxiaWxhZDNyZHwxMzk5NDQ2NCwwIy5mfHJlbWl0dGFuY2VhbGJpbGFkM3JkfDEzOTk0NDY0LDEzNDM4ODcyMDIzNTg0NDY1NSxGYWxzZSxRaENKUlpiUmZGTVRTUUR4c0l3VzVzSVRvbzhrUWtXRlVrMVlTUUlIbmsvRFlRZ1ZqV01namlpZ2lkTUhVT3JkeitsTEpDRUY2S0dlcXhMK0o5VXUwbHh1bFh3WTFrOEhCK3VlNFlUYVc5Q29NYk4yUG5QODBseXgwOUhUak9XSVAvaVZBd3Q4bTh6T3owV24yaXNiNjdZekt3Y2oxZ1lXS0lkWm5DN2xQSlZoSjM3My9ycjlsaXFkays2OCthaWE0eE9DNE5HWmVZL0oraXVBUytpcGQ2UjdrVzBtRFcxSGI5RHJiOVY1blRlMkhjeU9vRmVIM0VGbmlJODl3VWNvMU1nTEtNMk00VUQrWXZuRE1yQS9xK2hXdmk4bFFWd2tEN1lJUVlIWWNDNkpJWmRnOUVlTGRTdzVxZWRybTY0TjFOczBCYWtEbFlpTWxvSlpOWE9tK1E9PSxodHRwczovL3JlbWl0dGFuY2UuYmFua2FsYmlsYWQuY29tLzwvU1A+; path=/; SameSite=None; secure; HttpOnly, FedAuth=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+MCMuZnxyZW1pdHRhbmNlYWxiaWxhZDNyZHwxMzk5NDQ2NCwwIy5mfHJlbWl0dGFuY2VhbGJpbGFkM3JkfDEzOTk0NDY0LDEzNDM4ODcyMDIzNTg0NDY1NSxGYWxzZSxRaENKUlpiUmZGTVRTUUR4c0l3VzVzSVRvbzhrUWtXRlVrMVlTUUlIbmsvRFlRZ1ZqV01namlpZ2lkTUhVT3JkeitsTEpDRUY2S0dlcXhMK0o5VXUwbHh1bFh3WTFrOEhCK3VlNFlUYVc5Q29NYk4yUG5QODBseXgwOUhUak9XSVAvaVZBd3Q4bTh6T3owV24yaXNiNjdZekt3Y2oxZ1lXS0lkWm5DN2xQSlZoSjM3My9ycjlsaXFkays2OCthaWE0eE9DNE5HWmVZL0oraXVBUytpcGQ2UjdrVzBtRFcxSGI5RHJiOVY1blRlMkhjeU9vRmVIM0VGbmlJODl3VWNvMU1nTEtNMk00VUQrWXZuRE1yQS9xK2hXdmk4bFFWd2tEN1lJUVlIWWNDNkpJWmRnOUVlTGRTdzVxZWRybTY0TjFOczBCYWtEbFlpTWxvSlpOWE9tK1E9PSxodHRwczovL3JlbWl0dGFuY2UuYmFua2FsYmlsYWQuY29tLzwvU1A+; path=/; SameSite=None; secure; HttpOnly",
+    "Last-Modified": "Fri, 06 Nov 2026 12:00:29 GMT",
+    "SPRequestGuid": "822e4ca2-60ca-a0d5-1ac9-eeb4e6ac05cc",
+    "X-FRAME-OPTIONS": "SAMEORIGIN",
+    "MicrosoftSharePointTeamServices": "16.0.0.20326",
+    "X-Powered-By": "ASP.NET",
+    "Content-Length": "0"
+  },
+  "body_snippet": ""
+}

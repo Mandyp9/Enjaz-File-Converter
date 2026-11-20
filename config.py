@@ -56,7 +56,7 @@ EXRATE_DEFAULT_FALLBACK_RATE = "1"
 # for the rate — no matter how many files are converted in between —
 # reuses the cached value instead of hitting the service again. Add/remove
 # times here if the bank's refresh schedule changes.
-EXRATE_REFRESH_TIMES = ["10:30", "14:30"]
+EXRATE_REFRESH_TIMES = ["10:30", "14:10"]
 
 # Every fetched rate (scheduled or fallback) is logged here as a running
 # history, and this file also doubles as the persisted cache — so a
@@ -79,7 +79,7 @@ EXRATE_JSON_LOG_MAX_ENTRIES = 500
 # connection. Set this to the LAN IP address your machine should have
 # when the connection is working correctly — leave it as "" to skip the
 # exact-IP check (LAN-connected/disconnected is still checked either way).
-EXPECTED_LAN_IP = "10.13.143.98"
+EXPECTED_LAN_IP = ["10.13.143.92","10.13.143.114"]
 
 # URL used for a quick "is the portal even reachable" check before trying
 # to log in.
@@ -219,11 +219,21 @@ DOWNLOAD_PASSWORD = "EMT@1234#"
 # Schedule: times (24h HH:MM) when a new TXT file is expected on the portal.
 # The downloader checks for +5 minutes around each of these times.
 DOWNLOAD_SCHEDULE = [
-    "11:59", "12:46", "13:15", "13:46", "14:15", "14:46",
+    "11:46","12:46", "13:15", "13:46", "14:15", "14:46",
     "15:15", "15:46", "16:15", "16:45", "17:15",
     "17:45", "18:15", "18:46", "19:15", "19:46",
     "20:15", "20:46", "01:46"
 ]
+
+# Any slot checked BEFORE this hour (24h, local time) is treated as still
+# belonging to the PREVIOUS calendar day's file batch — its date_str and
+# sequence numbering continue from yesterday instead of resetting to a
+# fresh date + 00001. This matters for the "01:46" slot above: it's
+# really the tail end of the previous business day's overnight batch, not
+# the start of a new one (the actual new-day reset is "08:46"). Raise
+# this past 08:46 (e.g. 9) only if 08:46 itself should ALSO continue
+# yesterday's sequence instead of starting fresh.
+EARLY_MORNING_CUTOFF_HOUR = 6
 
 # How often (seconds) the scheduler checks if it's inside a download window.
 SCHEDULER_TICK_SECONDS = 30

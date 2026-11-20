@@ -100,7 +100,7 @@ def get_network_status() -> dict:
             status["wifi_ip"] = ipv4
 
     if config.EXPECTED_LAN_IP:
-        status["ip_matches_expected"] = (status["lan_ip"] == config.EXPECTED_LAN_IP)
+        status["ip_matches_expected"] = (status["lan_ip"] in config.EXPECTED_LAN_IP)
 
     return status
 

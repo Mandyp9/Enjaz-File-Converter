@@ -4,5 +4,1115 @@
     "status": "success",
     "rate": "152.77",
     "error": null
+  },
+  {
+    "timestamp": "2026-08-19 12:18:18",
+    "status": "success",
+    "rate": "152.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-19 14:47:06",
+    "status": "success",
+    "rate": "152.89",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-20 11:46:34",
+    "status": "success",
+    "rate": "152.71",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-20 14:46:16",
+    "status": "success",
+    "rate": "152.71",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-21 11:46:43",
+    "status": "success",
+    "rate": "152.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-21 14:46:25",
+    "status": "success",
+    "rate": "152.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-22 11:46:28",
+    "status": "success",
+    "rate": "152.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-22 14:46:31",
+    "status": "success",
+    "rate": "152.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-23 11:46:34",
+    "status": "success",
+    "rate": "152.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-23 14:46:18",
+    "status": "success",
+    "rate": "152.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-24 11:46:30",
+    "status": "success",
+    "rate": "152.76",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-24 14:46:28",
+    "status": "success",
+    "rate": "152.78",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-25 11:46:30",
+    "status": "success",
+    "rate": "152.86",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-25 14:46:43",
+    "status": "success",
+    "rate": "152.78",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-26 11:46:42",
+    "status": "success",
+    "rate": "152.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-26 14:16:16",
+    "status": "success",
+    "rate": "152.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-27 11:46:58",
+    "status": "success",
+    "rate": "152.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-27 14:16:10",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-28 11:46:47",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-28 14:15:39",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-29 11:46:46",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-29 14:16:29",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-30 11:46:38",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-30 14:16:08",
+    "status": "success",
+    "rate": "152.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-31 11:46:28",
+    "status": "success",
+    "rate": "152.41",
+    "error": null
+  },
+  {
+    "timestamp": "2026-08-31 14:16:26",
+    "status": "success",
+    "rate": "152.00",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-01 11:46:38",
+    "status": "success",
+    "rate": "151.75",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-01 14:16:07",
+    "status": "success",
+    "rate": "151.53",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-02 11:46:23",
+    "status": "success",
+    "rate": "151.64",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-02 14:15:42",
+    "status": "success",
+    "rate": "151.60",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-03 11:46:40",
+    "status": "success",
+    "rate": "150.75",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-03 14:15:44",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-04 11:46:58",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-04 14:16:10",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-05 11:46:28",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-05 14:16:19",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-06 11:46:23",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-06 14:16:26",
+    "status": "success",
+    "rate": "150.79",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-07 11:46:31",
+    "status": "success",
+    "rate": "150.76",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-07 14:16:14",
+    "status": "success",
+    "rate": "150.78",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-08 11:46:40",
+    "status": "success",
+    "rate": "150.78",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-08 14:15:42",
+    "status": "success",
+    "rate": "150.78",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-09 11:46:33",
+    "status": "success",
+    "rate": "151.59",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-09 14:15:20",
+    "status": "success",
+    "rate": "151.70",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-10 11:48:40",
+    "status": "success",
+    "rate": "152.20",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-10 14:16:18",
+    "status": "success",
+    "rate": "152.14",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-11 11:46:25",
+    "status": "success",
+    "rate": "152.83",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-11 14:16:08",
+    "status": "success",
+    "rate": "152.74",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-12 11:46:44",
+    "status": "success",
+    "rate": "152.74",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-12 14:15:51",
+    "status": "success",
+    "rate": "152.74",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-13 11:46:43",
+    "status": "success",
+    "rate": "152.74",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-13 14:15:24",
+    "status": "success",
+    "rate": "152.74",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-14 11:46:35",
+    "status": "success",
+    "rate": "152.60",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-14 14:16:16",
+    "status": "success",
+    "rate": "152.60",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-15 11:46:29",
+    "status": "success",
+    "rate": "153.00",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-15 14:16:07",
+    "status": "success",
+    "rate": "153.05",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-16 11:46:42",
+    "status": "success",
+    "rate": "153.13",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-16 14:16:25",
+    "status": "success",
+    "rate": "153.15",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-17 11:46:28",
+    "status": "success",
+    "rate": "153.26",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-17 14:15:29",
+    "status": "success",
+    "rate": "153.11",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-18 11:46:30",
+    "status": "success",
+    "rate": "152.88",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-18 14:16:02",
+    "status": "success",
+    "rate": "152.88",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-19 11:46:35",
+    "status": "success",
+    "rate": "152.97",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-19 14:16:07",
+    "status": "success",
+    "rate": "152.97",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-20 11:46:25",
+    "status": "success",
+    "rate": "152.97",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-20 14:16:28",
+    "status": "success",
+    "rate": "152.97",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-21 11:46:31",
+    "status": "success",
+    "rate": "152.91",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-21 14:16:18",
+    "status": "success",
+    "rate": "152.91",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-22 11:46:40",
+    "status": "success",
+    "rate": "152.88",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-22 14:15:42",
+    "status": "success",
+    "rate": "152.98",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-23 11:46:52",
+    "status": "success",
+    "rate": "152.70",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-23 14:46:43",
+    "status": "success",
+    "rate": "152.73",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-24 11:46:40",
+    "status": "success",
+    "rate": "153.05",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-24 14:15:39",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-25 11:46:36",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-25 14:15:48",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-26 11:46:41",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-26 14:15:42",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-27 12:46:41",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-27 14:16:18",
+    "status": "success",
+    "rate": "153.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-28 11:46:23",
+    "status": "success",
+    "rate": "153.19",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-28 14:46:28",
+    "status": "success",
+    "rate": "153.20",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-29 11:46:32",
+    "status": "success",
+    "rate": "153.49",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-29 14:16:01",
+    "status": "success",
+    "rate": "153.36",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-30 11:46:36",
+    "status": "success",
+    "rate": "153.23",
+    "error": null
+  },
+  {
+    "timestamp": "2026-09-30 14:16:05",
+    "status": "success",
+    "rate": "153.05",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-01 11:47:18",
+    "status": "success",
+    "rate": "153.16",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-01 14:46:16",
+    "status": "success",
+    "rate": "153.26",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-02 11:46:35",
+    "status": "success",
+    "rate": "153.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-02 14:15:18",
+    "status": "success",
+    "rate": "153.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-03 11:46:37",
+    "status": "success",
+    "rate": "153.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-03 14:16:32",
+    "status": "success",
+    "rate": "153.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-04 11:46:35",
+    "status": "success",
+    "rate": "153.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-04 14:16:10",
+    "status": "success",
+    "rate": "153.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-05 11:46:37",
+    "status": "success",
+    "rate": "153.70",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-05 14:16:51",
+    "status": "success",
+    "rate": "153.74",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-06 11:46:39",
+    "status": "success",
+    "rate": "153.95",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-06 14:16:02",
+    "status": "success",
+    "rate": "153.95",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-07 11:46:36",
+    "status": "success",
+    "rate": "153.89",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-07 14:16:06",
+    "status": "success",
+    "rate": "154.19",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-08 11:46:48",
+    "status": "success",
+    "rate": "154.39",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-08 14:16:01",
+    "status": "success",
+    "rate": "154.49",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09 11:46:43",
+    "status": "success",
+    "rate": "154.45",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-09 14:16:11",
+    "status": "success",
+    "rate": "154.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-10 11:46:43",
+    "status": "success",
+    "rate": "154.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-10 14:15:49",
+    "status": "success",
+    "rate": "154.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-11 11:46:30",
+    "status": "success",
+    "rate": "154.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-11 14:16:23",
+    "status": "success",
+    "rate": "154.37",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-12 11:46:25",
+    "status": "success",
+    "rate": "153.01",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-12 14:15:39",
+    "status": "success",
+    "rate": "152.88",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-13 11:46:36",
+    "status": "success",
+    "rate": "152.03",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-13 14:16:48",
+    "status": "success",
+    "rate": "151.99",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-14 11:47:17",
+    "status": "success",
+    "rate": "151.70",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-14 14:16:05",
+    "status": "success",
+    "rate": "151.76",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-15 11:46:19",
+    "status": "success",
+    "rate": "151.60",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-15 14:15:17",
+    "status": "success",
+    "rate": "151.60",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-16 11:46:27",
+    "status": "success",
+    "rate": "151.30",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-16 14:15:25",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-17 11:46:20",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-18 11:46:20",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-18 14:16:49",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-19 11:46:46",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-19 14:16:32",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-20 11:46:22",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-20 14:16:05",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-21 11:46:36",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-21 14:16:04",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-22 11:46:34",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-22 14:16:17",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-23 11:46:34",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-23 14:16:03",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-24 11:46:43",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-24 14:15:41",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-25 11:46:20",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-25 14:15:41",
+    "status": "success",
+    "rate": "151.38",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-26 11:46:33",
+    "status": "success",
+    "rate": "151.61",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-26 14:16:18",
+    "status": "success",
+    "rate": "151.81",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-27 11:46:27",
+    "status": "success",
+    "rate": "152.00",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-27 14:16:14",
+    "status": "success",
+    "rate": "151.94",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-28 11:46:41",
+    "status": "success",
+    "rate": "151.86",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-28 14:16:17",
+    "status": "success",
+    "rate": "151.96",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-29 11:46:37",
+    "status": "success",
+    "rate": "152.09",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-29 14:16:11",
+    "status": "success",
+    "rate": "152.10",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-30 11:46:32",
+    "status": "success",
+    "rate": "152.08",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-30 14:16:17",
+    "status": "success",
+    "rate": "151.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-31 11:46:20",
+    "status": "success",
+    "rate": "151.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-10-31 14:16:17",
+    "status": "success",
+    "rate": "151.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-01 11:46:41",
+    "status": "success",
+    "rate": "151.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-01 14:19:43",
+    "status": "success",
+    "rate": "151.80",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-02 11:47:30",
+    "status": "success",
+    "rate": "151.39",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-02 14:15:36",
+    "status": "success",
+    "rate": "151.55",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-03 11:46:43",
+    "status": "success",
+    "rate": "151.24",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-03 14:16:27",
+    "status": "success",
+    "rate": "151.28",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-04 11:46:42",
+    "status": "success",
+    "rate": "154.90",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-04 14:20:46",
+    "status": "success",
+    "rate": "151.26",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-05 11:46:34",
+    "status": "success",
+    "rate": "150.89",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-05 14:16:42",
+    "status": "success",
+    "rate": "150.78",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-06 11:46:49",
+    "status": "success",
+    "rate": "150.72",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-06 14:15:44",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-07 11:46:49",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-07 14:16:15",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-08 11:46:42",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-08 14:15:40",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-09 11:46:28",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-09 14:16:10",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-10 11:47:15",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-10 14:16:05",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-11 11:46:22",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-11 14:16:14",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-12 11:46:31",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-12 14:16:29",
+    "status": "success",
+    "rate": "150.17",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-13 11:46:46",
+    "status": "success",
+    "rate": "150.32",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-13 14:15:34",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-14 11:46:33",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-14 14:16:38",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-15 11:46:27",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-15 14:16:08",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-16 11:47:15",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-16 14:16:14",
+    "status": "success",
+    "rate": "150.43",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-17 11:46:41",
+    "status": "success",
+    "rate": "149.61",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-17 14:16:30",
+    "status": "success",
+    "rate": "149.46",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-18 11:46:26",
+    "status": "success",
+    "rate": "148.98",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-18 14:16:23",
+    "status": "success",
+    "rate": "149.15",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-19 11:46:42",
+    "status": "success",
+    "rate": "149.24",
+    "error": null
+  },
+  {
+    "timestamp": "2026-11-19 14:16:13",
+    "status": "success",
+    "rate": "148.91",
+    "error": null
   }
 ]
